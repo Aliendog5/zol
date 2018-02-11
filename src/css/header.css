@@ -24,6 +24,12 @@ header ol {
 header ol .my_li {
   position: relative;
 }
+header ol .my_li .tel {
+  left: -20px;
+}
+header ol .my_li .tel p {
+  white-space: nowrap;
+}
 header ol .my_li div {
   background: #fff;
   display: none;
@@ -33,13 +39,24 @@ header ol .my_li div {
   z-index: 999;
 }
 header ol .my_li div p {
-  width: 100px;
+  width: 80px;
+  padding: 0 10px;
 }
 header ol .my_li div p span {
   color: red;
 }
+header ol .my_li div img {
+  width: 150px;
+}
+header ol .my_li div a:hover {
+  text-decoration: none;
+}
 header ol .my_li:hover {
   background: #fff;
+}
+header ol .my_li:hover i {
+  transtion: all 1s linear;
+  transform: rotate(180deg);
 }
 header ol .my_li:hover div {
   display: block;
@@ -62,7 +79,4 @@ header ol li i {
   height: 4px;
   background: url("../images/img/topbar_ico.png") 0 0 no-repeat;
   background-position: 0 -45px;
-}
-header .ad {
-  display: block;
 }
