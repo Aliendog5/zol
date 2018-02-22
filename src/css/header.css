@@ -61,6 +61,15 @@ header ol .my_li:hover i {
 header ol .my_li:hover div {
   display: block;
 }
+header ol .phone-shopping {
+  background: url("../images/img/topbar_ico.png") 0 0 no-repeat;
+  background-position: 0 0;
+  padding-left: 25px;
+}
+header ol .phone-shopping:hover {
+  background: #fff url("../images/img/topbar_ico.png") 0 0 no-repeat;
+  background-position: 0 0;
+}
 header ol li {
   color: #666;
   padding: 0 10px;
