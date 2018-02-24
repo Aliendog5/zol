@@ -18,11 +18,15 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     $res=$conn->query($sql);
     $arr=array();
     if ($res->num_rows==1){
-        $arr->status=1;
-        $arr->msg="登录成功";
+        $arr["status"]=1;
+        $arr["msg"]="登录成功";
+        session_start();
+        session_id($userName);
+       /* $_SESSION['uname'] = $userName;
+        $session_id = session_id();*/
     }else{
-        $arr->status=0;
-        $arr->msg="登录失败";
+        $arr["status"]=0;
+        $arr["msg"]="登录失败";
     }
-    print_r($arr);
+    print_r(json_encode($arr));
 }

@@ -3,24 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <title>登录</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <script src="js/lib/jquery/jquery-1.11.1.min.js"></script>
+    <script src="js/lib/md5/jquery.md5.js"></script>
+    <script src="js/lib/jquery-tools.js"></script>
+    <script src="js/login.js"></script>
 </head>
 <body>
-<form id="myform">
-    <p>
-        <label>
-            用户名：<input name="userName"/>
-        </label>
-    </p>
-    <p>
-        <label>
-            密码：<input name="userPwd"/>
-        </label>
-    </p>
-    <p>
-        <label>
-            验证码：<input name="userPwd"/>
-        </label>
-    </p>
-</form>
+<header>
+    <div class="main">
+        <a href="index.html" class="logo"><img src="images/img/logo_130x60.png" width="130" height="60" alt=""><span>中关村在线旗下网上商城</span></a>
+        <p><span>
+            还没有Z商城账号？
+        </span>
+            <a href="logon.html">立即注册</a>
+        </p>
+    </div>
+</header>
+<div class="main all">
+    <img src="images/img/ad2_1.jpg" alt="" class="ad">
+    <form id="myform">
+        <p>
+            <label>
+                <span>用户名：</span><input name="userName"/>
+            </label>
+        </p>
+        <p>
+            <label>
+                <span>密码：</span><input name="userPwd"/>
+            </label>
+        </p>
+      <!--  <p>
+            <label>
+                <span>验证码：</span><input name="userPwd"/>
+            </label>
+        </p>-->
+        <p>
+            <button>登录</button>
+        </p>
+    </form>
+</div>
 </body>
 </html>

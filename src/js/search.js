@@ -1,5 +1,5 @@
 $(function(){
-    $(".search").load("search.html",function(){
+    $(".search1").load("http://127.0.0.1/zol/src/search.html",function(){
         $(".menu").on("mouseenter",function(){
             $(this).find("i").rotate(0,180);
             $(this).find("p").css("borderBottom",0);

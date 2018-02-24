@@ -90,3 +90,22 @@ header .main p a:hover {
   box-sizing: border-box;
   padding: 50px;
 }
+.all .right .login {
+  display: block;
+  width: 170px;
+  height: 36px;
+  background-image: url("../images/img/login-bg.png");
+  margin-top: 20px;
+}
+.all .right .login:hover {
+  opacity: 0.8;
+}
+.all .right .login:nth-child(3) {
+  background-position: 0 -37px;
+}
+.all .right .login:nth-child(4) {
+  background-position: 0 -74px;
+}
+.all .right .login:nth-child(5) {
+  background-position: 0 -111px;
+}

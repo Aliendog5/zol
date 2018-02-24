@@ -1,0 +1,32 @@
+.main {
+  width: 960px;
+}
+.all {
+  padding-top: 30px;
+}
+.all ul {
+  padding-top: 30px;
+}
+.all ul li input {
+  margin-left: 20px;
+}
+.all ol {
+  padding-top: 30px;
+}
+.all ol li input {
+  margin-left: 20px;
+}
+.list_menu ol li {
+  width: 240px;
+  height: 380px;
+  box-sizing: border-box;
+  padding: 20px;
+  float: left;
+}
+.list_menu ol li img {
+  width: 200px;
+  height: 200px;
+}
+.list_menu ol li .price {
+  color: #c00;
+}

@@ -1,0 +1,25 @@
+.info {
+  border: 1px solid #ccc;
+  overflow: hidden;
+  padding-top: 30px;
+}
+.info img {
+  width: 400px;
+  height: 400px;
+  float: left;
+}
+.info .right {
+  width: 560px;
+  box-sizing: border-box;
+  padding: 20px;
+  float: right;
+}
+.info .right p {
+  font-size: 24px;
+}
+.info .right p span {
+  color: #c00;
+}
+.info .right #btn {
+  float: right;
+}

@@ -42,7 +42,13 @@
                     dataType:"json",
                     data:data
                 }).then(function(res){
-                    console.log(res);
+                    if(res["status"]){
+                        if(confirm("注册成功！是否跳转到登录页面")){
+                            window.location.href="login.html"
+                        }
+                    }else{
+                        alert("注册失败")
+                    }
                 });
                 return false
             }
