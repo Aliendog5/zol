@@ -4,11 +4,9 @@ $(function(){
         $.ajax({
             url:"http://127.0.0.1/zol/server/php/cart.php",
             type:"post",
-            dataType:"json",
-            data:{
-                userName:"daijunwang"
-            }
+            dataType:"json"
         }).then(function(res){
+            console.log(res);
             for(var i=0; i<JSON.parse(res).length; i++){
                 $.ajax({
                     url:"http://127.0.0.1/zol/server/php/list.php",
