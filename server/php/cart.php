@@ -7,8 +7,9 @@
  */
 header("Content-type:JSON;charset=utf-8");  //统一输出编码为utf-8
 header("Access-Control-Allow-Origin:*");//允许跨域
-
+//判断是否带有请求参数  没有参数表示获取购物车数据  有参数代表添加购物车数据
 if (empty($_REQUEST)){
+    //获取购物车数据
     session_start();
     $user_name=session_id();
     $conn=new mysqli("127.0.0.1","root","","zol_shopping");
@@ -25,6 +26,7 @@ if (empty($_REQUEST)){
     }
     $conn->close();
 }else{
+    // 添加购物车到数据库
     session_start();
     $user_name=session_id();
     $conn=new mysqli("127.0.0.1","root","","zol_shopping");

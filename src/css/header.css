@@ -74,6 +74,9 @@ header ol li {
   color: #666;
   padding: 0 10px;
 }
+header ol li .cart span {
+  color: #c00;
+}
 header ol li a {
   color: #666;
 }

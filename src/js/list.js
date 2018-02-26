@@ -1,5 +1,7 @@
 $(function(){
+
     $(".all ul li").eq($("select option:selected").index()).show().siblings("li").hide();
+    // class1 搜索
     $(".all select").on("change",function(){
         $(".all ul li").eq($(".all select option:selected").index()).show().siblings("li").hide().find("input").attr("checked",false);
         var str="class1='"+$(this).val()+"'"
@@ -26,14 +28,19 @@ $(function(){
             })
         })
     });
+    // class2 搜索
     $(".all ul li input").on("click",function(){
-
+        // 判断二级搜索是否有条件
         if($(this).parent().find("input:checked").length!=0){
             var str="class1='"+$(".all select option").eq($(this).parent().index()).val()+"' and (";
             for(var i=0; i<$(this).parent().find("input:checked").length; i++){
                 str+="class2='"+$(this).parent().find("input:checked")[i].value+"' or "
             }
             str=str.replace(/or\s$/,')');
+            console.log($(".all ol li input:checked"));
+            if($(".all ol li input:checked")){
+
+            }
         }else {
             var str="class1='"+$(".all select option").eq($(this).parent().index()).val()+"'"
         }
