@@ -14,7 +14,14 @@
                     equalTo:"#field"
                 },
                 userTel:{
+                    "required" : true,
+                    rangelength:[11,11]
+                },
+                userSex:{
                     "required" : true
+                },
+                userAddress:{
+                    "required" : true,
                 }
             },
             messages :{
@@ -30,7 +37,14 @@
                     equalTo:"密码与第一次输入不同"
                 },
                 userTel:{
-                    "required" : "请输入电话号码"
+                    "required" : "请输入电话号码",
+                    rangelength:"请输入正确的电话号码"
+                },
+                userSex:{
+                    "required" : "必选项"
+                },
+                userAddress:{
+                    "required" : "请填写您的地址"
                 }
             },
             submitHandler:function(){

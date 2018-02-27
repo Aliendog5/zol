@@ -19,7 +19,7 @@ $(function(){
                $(".search1 ol li").eq(2).find("span").text(JSON.parse(res).length);
            })
        }else {
-           $(".search1 ol li").eq(2).find("span").text(JSON.parse($.cookie("list")).length);
+           $(".search1 ol li").eq(2).find("span").text(JSON.parse($.cookie("list")||"[]").length);
 
        }
 

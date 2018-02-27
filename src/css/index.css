@@ -1,3 +1,6 @@
+body {
+  background-color: #f7f7f7;
+}
 .ad {
   display: block;
   margin-top: 10px;
@@ -26,4 +29,443 @@
 }
 .banner .active {
   background: yellow !important;
+}
+.all .title {
+  padding: 30px 0 14px;
+}
+.all .title h2 {
+  padding-left: 40px;
+  height: 36px;
+  font-size: 24px;
+  line-height: 36px;
+  color: #333;
+  background: url(../images/img/zol-home-icons.png) no-repeat;
+}
+.all .title h2 span {
+  font-size: 16px;
+  color: #ccc;
+}
+.all .title h2 a:hover {
+  color: #c00;
+}
+.all .title h2 a:hover i {
+  border: 1px solid #c00;
+}
+.all .title h2 a {
+  line-height: 16px;
+  font-size: 14px;
+  color: #999;
+  float: right;
+}
+.all .title h2 a i {
+  text-align: center;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid #999;
+}
+.all .group .title h2 {
+  background-position: -137px 3px;
+}
+.all .group .group_lunbo {
+  height: 150px;
+  width: 100%;
+  overflow: hidden;
+}
+.all .group .group_lunbo ul {
+  position: relative;
+  height: 100%;
+}
+.all .group .group_lunbo ul li:nth-child(3n+2) {
+  margin: 0 3px;
+}
+.all .group .group_lunbo ul .goods {
+  position: relative;
+  float: left;
+  box-sizing: border-box;
+  padding: 15px;
+  background-color: pink;
+  height: 100%;
+  width: 398px;
+}
+.all .group .group_lunbo ul .goods .left {
+  float: left;
+}
+.all .group .group_lunbo ul .goods .left .goodsName {
+  font-weight: 600;
+  font-size: 16px;
+  color: #333;
+  line-height: 26px;
+}
+.all .group .group_lunbo ul .goods .left .goodsDetails {
+  font-size: 14px;
+  color: #ccc;
+  line-height: 24px;
+}
+.all .group .group_lunbo ul .goods .left .goodsPrice {
+  color: #c00;
+  line-height: 52px;
+}
+.all .group .group_lunbo ul .goods .left .goodsPrice i {
+  font-size: 12px;
+}
+.all .group .group_lunbo ul .goods .left .goodsPrice span {
+  font-size: 18px;
+}
+.all .group .group_lunbo ul .goods .left .goodsTime {
+  font-size: 12px;
+  line-height: 22px;
+  color: #333;
+}
+.all .group .group_lunbo ul .goods .left .goodsTime span {
+  color: #999;
+}
+.all .group .group_lunbo ul .goods .left .goodsTime i {
+  color: #c00;
+}
+.all .group .group_lunbo ul .goods .right {
+  float: right;
+}
+.all .group .group_lunbo ul .goods .right img {
+  width: 120px;
+}
+.all .group .group_lunbo ul .goods .slide {
+  position: absolute;
+  display: none;
+  bottom: 0px;
+  left: 0;
+  width: 398px;
+  height: 150px;
+  background-color: rgba(51, 51, 51, 0.89);
+  color: #fff;
+}
+.all .group .group_lunbo ul .goods .slide .slide_left {
+  text-align: center;
+  width: 150px;
+  float: left;
+}
+.all .group .group_lunbo ul .goods .slide .slide_left img {
+  margin: 20px 0;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.all .group .group_lunbo ul .goods .slide .slide_left ol li {
+  float: left;
+}
+.all .group .group_lunbo ul .goods .slide .slide_left ol li a {
+  padding: 0 10px;
+  color: #fff;
+}
+.all .group .group_lunbo ul .goods .slide .slide_right {
+  line-height: 26px;
+  float: right;
+  width: 248px;
+  box-sizing: border-box;
+  padding: 15px;
+}
+.all .group .group_lunbo ul .goods .slide .slide_right .slide_name {
+  font-weight: 600;
+  font-size: 16px;
+}
+.all .group .group_lunbo ul .goods .slide .slide_right .slide_price {
+  font-size: 14px;
+}
+.all .group .group_lunbo ul .goods .slide .slide_right .slide_price span {
+  color: #c00;
+}
+.all .group .group_lunbo ul .goods .slide .slide_right .slide_toPay {
+  display: block;
+  width: 50px;
+  text-align: center;
+  background-color: red;
+  color: #fff;
+}
+.all .coupon {
+  margin-top: 80px;
+  height: 100px;
+}
+.all .coupon ul {
+  height: 100px;
+}
+.all .coupon ul li {
+  height: 100%;
+  box-sizing: border-box;
+  float: left;
+  width: 243px;
+}
+.all .coupon ul li .coupon_1 {
+  width: 226px;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  float: left;
+  box-shadow: 1px 0 3px #e8e8e8;
+  background: #fff;
+}
+.all .coupon ul li .coupon_1 h4 {
+  overflow: hidden;
+  border-bottom: 1px solid #ccc;
+}
+.all .coupon ul li .coupon_1 h4 i {
+  font-size: 26px;
+  float: left;
+  line-height: 64px;
+  font-weight: bold;
+  color: #c00;
+  font-style: italic;
+}
+.all .coupon ul li .coupon_1 h4 div {
+  float: right;
+}
+.all .coupon ul li .coupon_1 h4 div h3 {
+  color: red;
+  font-size: 14px;
+  line-height: 24px;
+  padding-top: 10px;
+}
+.all .coupon ul li .coupon_1 h4 div p {
+  font-size: 12px;
+  line-height: 22px;
+  color: #ccc;
+}
+.all .coupon ul li .coupon_1 a {
+  display: block;
+  text-align: center;
+  color: #f66;
+  line-height: 24px;
+}
+.all .coupon ul li .icon {
+  float: right;
+  height: 100%;
+  width: 17px;
+  background: url(../images/img/zol-home-icons.png) -68px 0 no-repeat;
+}
+.all .coupon ul li:nth-child(1) {
+  width: 168px;
+  background-image: url(../images/img/coupon-all-bg.png);
+  padding: 15px 0 0 20px;
+}
+.all .coupon ul li:nth-child(1) h2 {
+  color: #fff;
+  font-size: 24px;
+}
+.all .coupon ul li:nth-child(1) p {
+  color: #ccc;
+}
+.all .coupon ul li:nth-child(1) a {
+  color: #fff;
+}
+.all .choice .title h2 {
+  background-position: -138px -345px;
+}
+.all .choice .choice_content {
+  padding: 20px;
+  background-color: #fff;
+}
+.all .choice .choice_content .top .left {
+  width: 731px;
+  float: left;
+}
+.all .choice .choice_content .top .left .left_top {
+  width: 731px;
+}
+.all .choice .choice_content .top .left .left_top ul {
+  float: left;
+  width: 100px;
+}
+.all .choice .choice_content .top .left .left_top ul li {
+  color: #333;
+  line-height: 46px;
+  text-align: center;
+  cursor: pointer;
+  height: 46px;
+  background-color: #ccc;
+  margin-bottom: 1px;
+}
+.all .choice .choice_content .top .left .left_top ul li:hover {
+  background-color: #ce1a1b;
+  color: #fff;
+}
+.all .choice .choice_content .top .left .left_top ol {
+  position: relative;
+  float: right;
+  width: 631px;
+}
+.all .choice .choice_content .top .left .left_top ol li {
+  position: absolute;
+  top: 0;
+}
+.all .choice .choice_content .top .left .left_bot {
+  width: 731px;
+}
+.all .choice .choice_content .top .left .left_bot ul {
+  width: 100%;
+}
+.all .choice .choice_content .top .left .left_bot ul li:nth-child(1) {
+  margin-left: 0;
+}
+.all .choice .choice_content .top .left .left_bot ul li {
+  position: relative;
+  float: left;
+  width: 182px;
+  height: 182px;
+  overflow: hidden;
+  margin-left: 1px;
+}
+.all .choice .choice_content .top .left .left_bot ul li img {
+  width: 182px;
+}
+.all .choice .choice_content .top .left .left_bot ul li div {
+  position: absolute;
+  bottom: -150px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  width: 182px;
+  height: 182px;
+  box-sizing: border-box;
+}
+.all .choice .choice_content .top .left .left_bot ul li div h3 {
+  line-height: 32px;
+}
+.all .choice .choice_content .top .left .left_bot ul li div h4 a {
+  color: #fff;
+}
+.all .choice .choice_content .top .left .left_bot ul li div h4 .char {
+  display: block;
+  width: 80px;
+  text-align: center;
+  line-height: 20px;
+  margin: 0 auto;
+  background-color: #c00;
+}
+.all .choice .choice_content .top .right {
+  width: 428px;
+  float: right;
+}
+.all .choice .choice_content .top .right a {
+  float: left;
+  height: 208px;
+  overflow: hidden;
+}
+.all .choice .choice_content .top .right a img {
+  height: 100%;
+  width: 100%;
+}
+.all .choice .choice_content .top .right .right_left,
+.all .choice .choice_content .top .right .right_right {
+  width: 214px;
+}
+.all .choice .choice_content .top .right .right_bot {
+  width: 100%;
+  height: 209px;
+}
+.all .brand .title h2 {
+  background-position: -138px -125px;
+}
+.all .brand ul {
+  margin-left: -12px;
+}
+.all .brand ul li:hover {
+  box-shadow: 1px 1px 4px #ccc, -1px 1px 10px #ccc;
+}
+.all .brand ul li {
+  width: 230px;
+  height: 340px;
+  background-color: #fff;
+  float: left;
+  margin-left: 12px;
+  text-align: center;
+}
+.all .brand ul li div {
+  width: 230px;
+  height: 230px;
+}
+.all .brand ul li div img {
+  width: 200px;
+}
+.all .brand ul li a {
+  font-size: 14px;
+  color: #333;
+  line-height: 54px;
+}
+.all .brand ul li a:hover {
+  color: #c00;
+  text-decoration: underline;
+}
+.all .e_Sports .title h2 {
+  background-position: -135px -167px;
+}
+.all .e_Sports .content h2 {
+  height: 46px;
+  background-color: #7095ee;
+}
+.all .e_Sports .content h2 p {
+  padding-left: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 46px;
+  float: left;
+  color: #fff;
+}
+.all .e_Sports .content h2 ul {
+  padding-top: 10px;
+  float: right;
+}
+.all .e_Sports .content h2 ul li {
+  margin: 0 15px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #fff;
+  float: left;
+}
+.all .e_Sports .content h2 ul .active {
+  border-bottom: 3px solid #fff;
+}
+.all .e_Sports .content .left {
+  width: 594px;
+}
+.all .e_Sports .content .left .list {
+  position: relative;
+}
+.all .e_Sports .content .left .list .list_cat {
+  position: absolute;
+  top: 0;
+  width: 594px;
+  height: 300px;
+}
+.all .e_Sports .content .left .list .list_cat .list_cat_top {
+  height: 260px;
+  position: relative;
+  overflow: hidden;
+}
+.all .e_Sports .content .left .list .list_cat .list_cat_top ul {
+  position: absolute;
+}
+.all .e_Sports .content .left .list .list_cat .list_cat_top ul li {
+  float: left;
+}
+.all .e_Sports .content .left .list .list_cat .list_cat_top ul li img {
+  display: block;
+}
+.all .e_Sports .content .left .list .list_cat .list_cat_top ul li a {
+  display: block;
+}
+.all .e_Sports .content .left .list .list_cat .list_cat_top ol {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+}
+.all .e_Sports .content .left .list .list_cat .list_cat_top ol li {
+  float: left;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #666;
+  margin-right: 10px;
+}
+.all .e_Sports .content .left .list .list_cat .list_cat_top ol .active {
+  background-color: #c00;
 }

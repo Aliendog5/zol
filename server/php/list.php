@@ -25,7 +25,7 @@ if($_REQUEST["id"]!="all"){
             }
             print_r(json_encode($rows));
         } else {
-            echo "0 结果";
+            print_r("[]") ;
         }
         $conn->close();
     }else{
@@ -44,7 +44,7 @@ if($_REQUEST["id"]!="all"){
             }
             print_r(json_encode($rows));
         } else {
-            echo "0 结果";
+            print_r("[]") ;
         }
         $conn->close();
     }
@@ -63,7 +63,7 @@ if($_REQUEST["id"]!="all"){
         }
         print_r(json_encode($rows));
     } else {
-        echo "0 结果";
+        print_r("[]") ;
     }
     $conn->close();
 }

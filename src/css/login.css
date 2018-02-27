@@ -51,15 +51,96 @@ header .main p a:hover {
   float: left;
   padding: 20px 50px;
 }
+.all #myform div .msgT {
+  color: green;
+}
+.all #myform div .msgF {
+  color: #c00;
+}
 .all #myform p {
-  padding: 10px 0;
+  padding: 5px 0;
+}
+.all #myform p #Txtidcode {
+  width: 200px;
+}
+.all #myform p #idcode {
+  vertical-align: middle;
 }
 .all #myform p input {
   border: 1px solid #ccc;
-  padding: 10px;
+  width: 290px;
+  height: 40px;
+  box-sizing: border-box;
+  padding: 0 15px;
 }
 .all #myform p span {
   display: inline-block;
   width: 100px;
   text-align: right;
+}
+.all #myform p button {
+  width: 290px;
+  height: 40px;
+  outline: none;
+  border: 0;
+  background-color: #db2e2e;
+}
+.all #myform .other {
+  border-top: 1px solid #ccc;
+  padding-top: 15px;
+  margin-top: 20px;
+}
+.all #myform .other h3 {
+  width: 100px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  top: -30px;
+  background-color: #fff;
+}
+.all #myform .other ul {
+  padding: 0 20px;
+}
+.all #myform .other ul li {
+  float: left;
+  margin-right: 12px;
+}
+.all #myform .other ul li a {
+  display: block;
+  width: 38px;
+  height: 38px;
+}
+.all #myform .other ul li:nth-child(1) a {
+  background: url(../images/img/bgs2.png) no-repeat;
+}
+.all #myform .other ul li:nth-child(1) a:hover {
+  background-position-y: -38px;
+}
+.all #myform .other ul li:nth-child(2) a {
+  background: url("../images/img/bg.png") no-repeat;
+  background-position: 0 -82px;
+}
+.all #myform .other ul li:nth-child(2) a:hover {
+  background-position-y: -120px;
+}
+.all #myform .other ul li:nth-child(3) a {
+  background: url("../images/img/bg.png") no-repeat;
+  background-position: -39px -82px;
+}
+.all #myform .other ul li:nth-child(3) a:hover {
+  background-position-y: -120px;
+}
+.all #myform .other ul li:nth-child(4) a {
+  background: url("../images/img/bg.png") no-repeat;
+  background-position: -78px -82px;
+}
+.all #myform .other ul li:nth-child(4) a:hover {
+  background-position-y: -120px;
+}
+.all #myform .other ul li:nth-child(5) a {
+  background: url("../images/img/bg.png") no-repeat;
+  background-position: -117px -82px;
+}
+.all #myform .other ul li:nth-child(5) a:hover {
+  background-position-y: -120px;
 }

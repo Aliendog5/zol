@@ -5,10 +5,13 @@
     <title>登录</title>
     <link rel="stylesheet" type="text/css" href="css/base.css">
     <link rel="stylesheet" type="text/css" href="css/login.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="js/lib/idcode/jquery.idcode.css">
     <script src="js/lib/jquery/jquery-1.11.1.min.js"></script>
     <script src="js/lib/md5/jquery.md5.js"></script>
     <script src="js/lib/jquery-tools.js"></script>
     <script src="js/lib/jquery.cookie/jquery.cookie.js"></script>
+    <script src="js/lib/idcode/jquery.idcode.js"></script>
     <script src="js/login.js"></script>
 </head>
 <body>
@@ -27,23 +30,49 @@
     <form id="myform">
         <p>
             <label>
-                <span>用户名：</span><input name="userName"/>
+                <input name="userName" placeholder="手机号/邮箱/用户名"/>
             </label>
         </p>
         <p>
             <label>
-                <span>密码：</span><input name="userPwd"/>
+                <input name="userPwd" placeholder="密码"/>
             </label>
         </p>
-      <!--  <p>
-            <label>
-                <span>验证码：</span><input name="userPwd"/>
-            </label>
-        </p>-->
+        <p>
+            <input type="text" id="Txtidcode" class="txtVerification" placeholder="请输入验证码"/>
+            <span id="idcode"></span>
+        <div>
+        <span id="msg"></span>
+        </div>
+        </p>
         <p>
             <button>登录</button>
         </p>
+        <div class="other">
+            <h3>合作账号登录</h3>
+            <ul>
+                <li>
+                    <a href="#"></a>
+                </li>
+                <li>
+                    <a href="#"></a>
+                </li>
+                <li>
+                    <a href="#"></a>
+                </li>
+                <li>
+                    <a href="#"></a>
+                </li>
+                <li>
+                    <a href="#"></a>
+                </li>
+            </ul>
+        </div>
     </form>
 </div>
+<footer>
+
+</footer>
+<script src="js/footer.js"></script>
 </body>
 </html>

@@ -87,3 +87,26 @@ table tbody .num a {
   width: 20px;
   height: 20px;
 }
+.pay {
+  height: 35px;
+  border: 1px solid #ccc;
+}
+.pay a {
+  line-height: 35px;
+}
+.pay .del {
+  float: left;
+  padding: 0 20px;
+}
+.pay .shopping {
+  float: right;
+  padding: 0 20px;
+}
+.pay .toPay {
+  float: right;
+  width: 130px;
+  text-align: center;
+  background-image: url("../images/img/pic1.png");
+  background-position: 0 -113px;
+  color: #fff;
+}

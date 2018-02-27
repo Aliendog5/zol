@@ -41,6 +41,7 @@ header{
   }
 }
 .all{
+
   border:1px solid #ccc;
   overflow:hidden;
   margin-top:20px;
@@ -50,16 +51,113 @@ header{
   #myform{
     float:left;
     padding:20px 50px;
+    div{
+      .msgT{
+        color:green;
+      }
+      .msgF{
+        color:#c00;
+      }
+    }
     p{
-      padding:10px 0;
+      padding:5px 0;
+      #Txtidcode{
+        width:200px;
+      }
+      #idcode{
+        vertical-align:middle;
+      }
+
       input{
         border:1px solid #ccc;
-        padding:10px;
+        width:290px;
+        height:40px;
+        box-sizing:border-box;
+        padding:0 15px;
       }
       span{
         display:inline-block;
         width:100px;
         text-align:right;
+      }
+      button{
+        width:290px;
+        height:40px;
+        outline:none;
+        border:0;
+        background-color:#db2e2e;
+      }
+    }
+    .other{
+      border-top:1px solid #ccc;
+      padding-top:15px;
+      margin-top:20px;
+      h3{
+        width:100px;
+        margin: 0 auto;
+        text-align:center;
+        position:relative;
+        top:-30px;
+        background-color:#fff;
+
+      }
+      ul{
+        padding:0 20px;
+        li{
+          float:left;
+          margin-right:12px;
+          a{
+            display:block;
+            width:38px;
+            height:38px;
+          }
+
+        }
+        li:nth-child(1){
+            a{
+              background:url(../images/img/bgs2.png) no-repeat;
+            }
+          a:hover{
+            background-position-y:-38px;
+          }
+        }
+        li:nth-child(2){
+          a{
+            background:url("../images/img/bg.png") no-repeat;
+            background-position:0 -82px;
+          }
+
+          a:hover{
+            background-position-y:-120px;
+          }
+        }
+        li:nth-child(3){
+          a{
+            background:url("../images/img/bg.png") no-repeat;
+            background-position:-39px -82px;
+          }
+          a:hover{
+            background-position-y:-120px;
+          }
+        }
+        li:nth-child(4){
+          a{
+            background:url("../images/img/bg.png") no-repeat;
+            background-position:-78px -82px;
+          }
+          a:hover{
+            background-position-y:-120px;
+          }
+        }
+        li:nth-child(5){
+          a{
+            background:url("../images/img/bg.png") no-repeat;
+            background-position:-117px -82px;
+          }
+          a:hover{
+            background-position-y:-120px;
+          }
+        }
       }
     }
   }
