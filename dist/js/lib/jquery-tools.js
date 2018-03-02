@@ -1,0 +1,1 @@
+jQuery,$.extend({toData:function(t){var r={};if(-1!=t.indexOf("&"))for(var e=t.split("&"),n=0;n<e.length;n++){var a=e[n].split("=");r[a[0]]=a[1]}return r}});

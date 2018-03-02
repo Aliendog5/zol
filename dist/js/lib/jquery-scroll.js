@@ -1,0 +1,1 @@
+jQuery,$(function(){$.extend({scrollTarget:function(o){var l=setInterval(function(){var r=(o-$(window).scrollTop())/10;r=r>0?Math.ceil(r):Math.floor(r),$(window).scrollTop($(window).scrollTop()+r),Math.abs($(window).scrollTop()-o)<=Math.abs(r)&&(clearInterval(l),$(window).scrollTop(o))},10);return this}})});
