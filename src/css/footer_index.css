@@ -1,0 +1,57 @@
+footer {
+  border-top: 1px solid #ccc;
+  padding: 20px 0;
+}
+footer ul {
+  float: left;
+}
+footer ul li {
+  float: left;
+  width: 170px;
+  line-height: 30px;
+}
+footer ul li dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  color: #666;
+}
+footer ul li dl dd {
+  font-size: 12px;
+}
+footer ul li dl dd a {
+  color: #666;
+}
+footer ul li dl dd a:hover {
+  text-decoration: underline;
+}
+footer ol {
+  float: right;
+}
+footer ol li {
+  line-height: 30px;
+  float: left;
+  width: 200px;
+  padding-left: 60px;
+  background: url(../images/img/footer.png) no-repeat;
+}
+footer ol li h3 {
+  font-size: 14px;
+  font-weight: bold;
+}
+footer ol li a {
+  display: block;
+  line-height: 26px;
+  width: 80px;
+  text-align: center;
+  color: #fff;
+  background-color: #f33;
+}
+footer ol li a:hover {
+  background-color: #c40;
+}
+footer ol li:nth-child(1) {
+  background-position: 0 -90px;
+}
+footer ol li:nth-child(2) {
+  background-position: 0 -215px;
+}

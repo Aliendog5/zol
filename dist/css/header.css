@@ -1,0 +1,24 @@
+header{height:30px;box-sizing:border-box;background-color:#f5f5f5;border-bottom:1px solid #e6e6e6}
+header li{line-height:30px;float:left}
+header ul{float:left}
+header ul li{margin-right:25px;color:#666}
+header ul li .index{color:#666}
+header ol{float:right}
+header ol .my_li{position:relative}
+header ol .my_li .tel{left:-20px}
+header ol .my_li .tel p{white-space:nowrap}
+header ol .my_li div{background:#fff;display:none;position:absolute;top:30px;left:0;z-index:999}
+header ol .my_li div p{width:80px;padding:0 10px}
+header ol .my_li div p span{color:red}
+header ol .my_li div img{width:150px}
+header ol .my_li div a:hover{text-decoration:none}
+header ol .my_li:hover{background:#fff}
+header ol .my_li:hover i{transtion:all 1s linear;transform:rotate(180deg)}
+header ol .my_li:hover div{display:block}
+header ol .phone-shopping{background:url(../images/img/topbar_ico.png) 0 0 no-repeat;background-position:0 0;padding-left:25px}
+header ol .phone-shopping:hover{background:#fff url(../images/img/topbar_ico.png) 0 0 no-repeat;background-position:0 0}
+header ol li{color:#666;padding:0 10px}
+header ol li .cart span{color:#c00}
+header ol li a{color:#666}
+header ol li a:hover{color:#c00;text-decoration:underline}
+header ol li i{display:inline-block;vertical-align:middle;width:7px;height:4px;background:url(../images/img/topbar_ico.png) 0 0 no-repeat;background-position:0 -45px}

@@ -1,0 +1,14 @@
+.slide_aside{width:37px;background-color:#000;height:500px;position:fixed;top:0;right:0;z-index:999}
+.slide_aside ul{position:absolute;top:30px;right:0}
+.slide_aside ul li{position:relative;height:37px;padding-top:10px}
+.slide_aside ul li a{display:block;height:37px;width:37px;background-image:url(../images/img/bar_ico.png);position:relative}
+.slide_aside ul li a:hover{background-color:red}
+.slide_aside ul li p{transform:scaleX(0);transform-origin:100%;background-color:red;line-height:37px;text-align:center;color:#fff;width:70px;height:37px;position:absolute;top:10px;right:37px}
+.slide_aside ul li:nth-child(2) a{background-position:0 -74px}
+.slide_aside ul li:nth-child(3) a{background-position:0 -111px}
+.slide_aside ul li:nth-child(3) a span{display:block;position:absolute;right:5px;top:0;width:15px;height:15px;line-height:15px;text-align:center;background-color:red;border-radius:50%;color:#fff}
+.slide_aside ul li:nth-child(3) a:hover{background-color:red}
+.slide_aside ul li:nth-child(3) a:hover span{color:red;background-color:#fff}
+.slide_aside ul li:nth-child(4) a{background-position:0 -693px}
+.slide_aside .top{cursor:pointer;display:block;position:absolute;bottom:0;left:0;width:37px;height:37px;background:#000 url(../images/img/bar_ico.png) 0 -185px no-repeat}
+.slide_aside .top:hover{background-color:#c00}
