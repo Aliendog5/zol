@@ -1,9 +1,8 @@
-body{
-  background-color:#f7f7f7;
-}
+
 .ad{
   display:block;
   margin-top:10px;
+  margin-bottom:30px;
 }
 .iconfont{
   background-image:url("../images/img/head.png");
@@ -32,7 +31,10 @@ body{
     background:yellow !important;
   }
 }
+//content
 .all{
+  background-color:#f7f7f7;
+  padding-bottom:40px;
   //标题
   .title{
     padding:30px 0 14px;
@@ -398,6 +400,7 @@ body{
         box-shadow: 1px 1px 4px #ccc, -1px 1px 10px #ccc;
       }
       li{
+        overflow:hidden;
         width:230px;
         height:340px;
         background-color:#fff;
@@ -458,14 +461,18 @@ body{
         }
       }
       .left{
+        float:left;
         width:594px;
         .list{
+          height:467px;
           position:relative;
+          .list_cat:nth-child(1){
+            z-index:5;
+          }
           .list_cat{
             position:absolute;
             top: 0;
             width:594px;
-            height:300px;
             .list_cat_top{
               height:260px;
               position:relative;
@@ -499,11 +506,71 @@ body{
                 }
               }
             }
+            .list_cat_bot{
+              ul{
+                width:594px;
+                background-color:#fff;
+                li{
+                  font-size:14px;
+                  float:left;
+                  width:160px;
+                  padding:0 19px;
+                  a{
+                    display:block;
+                    width:100%;
+                    text-overflow:ellipsis;
+                    white-space:nowrap;
+                    overflow:hidden;
+
+                    color:#333;
+                    img{
+                      width:100%;
+                    }
+                  }
+                  p{
+                    color:#c00;
+                  }
+                }
+              }
+            }
           }
         }
       }
       .right{
+        width:594px;
+        float:right;
+        .content{
+          ul{
+            height:467px;
+            background-color:#fff;
+            li{
+              height:50%;
+              width:198px;
+              float:left;
+              box-sizing:border-box;
+              padding:20px;
+              a:hover{
+                color:#c00;
+                text-decoration:underline;
+              }
+              a{
+                color:#333;
+                display:block;
+                text-overflow:ellipsis;
+                white-space:nowrap;
+                overflow:hidden;
+                img{
+                  display:block;
+                  width:160px;
+                }
+              }
+              p{
+                color:#c00;
+              }
 
+            }
+          }
+        }
       }
     }
   }

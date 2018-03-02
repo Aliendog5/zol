@@ -1,5 +1,6 @@
 $(function(){
 
+    console.log(window.location.href.split("?")[1]);
     $(".all ul li").eq($("select option:selected").index()).show().siblings("li").hide();
     // class1 搜索
     $(".all select").on("change",function(){
@@ -16,7 +17,7 @@ $(function(){
         }).then(function(res){
             $(".list_menu ol").html("");
             for(var i=0; i<res.length; i++){
-                $("<li data-info='"+res[i]["id"]+"'><img src='"+res[i]["img"]+"'><h4>"+res[i]["name"]+"</h4><p class='price'>¥"+res[i]["price"]+"</p></li>").appendTo($(".list_menu ol"))
+                $("<li data-info='"+res[i]["id"]+"'><img src='images/img/"+res[i]["img_list"]+"'><h4>"+res[i]["name"]+"</h4><p class='price'>¥"+res[i]["price"]+"</p></li>").appendTo($(".list_menu ol"))
                 /*<li data-info="1">
                         <img src="images/img/ChMkJlndtEKIJYNZAADjZ1wLE6QAAhKVwKR3AUAAON_900.jpg" alt="">
                         <h4>【顺丰包邮】vivo X20 全面屏手机 全网通 4GB+64GB 移动联通电信4G</h4>
@@ -60,7 +61,7 @@ $(function(){
         }).then(function(res){
             $(".list_menu ol").html("");
             for(var i=0; i<res.length; i++){
-                $("<li data-info='"+res[i]["id"]+"'><img src='"+res[i]["img"]+"'><h4>"+res[i]["name"]+"</h4><p class='price'>¥"+res[i]["price"]+"</p></li>").appendTo($(".list_menu ol"))
+                $("<li data-info='"+res[i]["id"]+"'><img src='images/img/"+res[i]["img_list"]+"'><h4>"+res[i]["name"]+"</h4><p class='price'>¥"+res[i]["price"]+"</p></li>").appendTo($(".list_menu ol"))
                 /*<li data-info="1">
                         <img src="images/img/ChMkJlndtEKIJYNZAADjZ1wLE6QAAhKVwKR3AUAAON_900.jpg" alt="">
                         <h4>【顺丰包邮】vivo X20 全面屏手机 全网通 4GB+64GB 移动联通电信4G</h4>
@@ -78,11 +79,11 @@ $(function(){
         type:"post",
         dataType:"json",
         data:{
-            id:"all"
+            id:"class1='"+$(".all select").val()+"'"
         }
     }).then(function(res){
         for(var i=0; i<res.length; i++){
-            $("<li data-info='"+res[i]["id"]+"'><img src='"+res[i]["img"]+"'><h4>"+res[i]["name"]+"</h4><p class='price'>¥"+res[i]["price"]+"</p></li>").appendTo($(".list_menu ol"))
+            $("<li data-info='"+res[i]["id"]+"'><img src='images/img/"+res[i]["img_list"]+"'><h4>"+res[i]["name"]+"</h4><p class='price'>¥"+res[i]["price"]+"</p></li>").appendTo($(".list_menu ol"))
         /*<li data-info="1">
                 <img src="images/img/ChMkJlndtEKIJYNZAADjZ1wLE6QAAhKVwKR3AUAAON_900.jpg" alt="">
                 <h4>【顺丰包邮】vivo X20 全面屏手机 全网通 4GB+64GB 移动联通电信4G</h4>
@@ -94,7 +95,6 @@ $(function(){
             window.location.href="http://127.0.0.1/zol/src/info.html?id="+$(this).data("info")
         })
     });
-
 
     $(".all ol li input").on("click",function(){
         var arr= JSON.parse($(".all ol li input:checked").val());
@@ -109,7 +109,6 @@ $(function(){
 
 
         }
-        console.log(str);
         $.ajax({
             url:"http://127.0.0.1/zol/server/php/list.php",
             type:"post",
@@ -120,7 +119,7 @@ $(function(){
         }).then(function(res){
             $(".list_menu ol").html("");
             for(var i=0; i<res.length; i++){
-                $("<li data-info='"+res[i]["id"]+"'><img src='"+res[i]["img"]+"'><h4>"+res[i]["name"]+"</h4><p class='price'>¥"+res[i]["price"]+"</p></li>").appendTo($(".list_menu ol"))
+                $("<li data-info='"+res[i]["id"]+"'><img src='images/img/"+res[i]["img_list"]+"'><h4>"+res[i]["name"]+"</h4><p class='price'>¥"+res[i]["price"]+"</p></li>").appendTo($(".list_menu ol"))
                 /*<li data-info="1">
                         <img src="images/img/ChMkJlndtEKIJYNZAADjZ1wLE6QAAhKVwKR3AUAAON_900.jpg" alt="">
                         <h4>【顺丰包邮】vivo X20 全面屏手机 全网通 4GB+64GB 移动联通电信4G</h4>

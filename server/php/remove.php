@@ -8,27 +8,22 @@
 header("Content-type:JSON;charset=utf-8");  //统一输出编码为utf-8
 header("Access-Control-Allow-Origin:*");//允许跨域
 
-//移出购物车
-session_start();
-$user_name=session_id();
-$conn=new mysqli("127.0.0.1","root","","zol_shopping");
-mysqli_query($conn,"set names utf8");
-$sql="select * from cart where user_name='".$user_name."'";
-$res=$conn->query($sql);
-if ($res->num_rows>0) {
-    // 输出数据
-    $row = $res->fetch_assoc();
-    $arr=json_decode($row["list"]);
-    foreach($arr as $k=>$v){
-        if($v == $_REQUEST['id']){
-            unset($arr[$k]);
-        }
-    }
-    $conn1=new mysqli("127.0.0.1","root","","zol_shopping");
-    mysqli_query($conn1,"set names utf8");
-    $sql="update cart set list='".json_encode($arr)."' where user_name='".$user_name."'";
-    $res=$conn1->query($sql);
-} else {
-    echo "0 结果";
+if ($_REQUEST["num"]==null){
+    //移出购物车
+    session_start();
+    $user_name=session_id();
+    $conn=new mysqli("127.0.0.1","root","","zol_shopping");
+    mysqli_query($conn,"set names utf8");
+    $sql="delete from cart where user_name='".$user_name."' and cart_id='".$_REQUEST["id"]."'";
+    $res=$conn->query($sql);
+    $conn->close();
+}else{
+    //修改数量
+    session_start();
+    $user_name=session_id();
+    $conn=new mysqli("127.0.0.1","root","","zol_shopping");
+    mysqli_query($conn,"set names utf8");
+    $sql="update cart set cart_num='".$_REQUEST["num"]."' where user_name='".$user_name."' and cart_id='".$_REQUEST["id"]."'";
+    $res=$conn->query($sql);
+    $conn->close();
 }
-$conn->close();

@@ -66,11 +66,11 @@ $(function(){
             var arr=res;
             for(var i=0; i<arr.length; i++){
                 //动态生成li
-                $('<li class="clearfix goods"><div class="left"><p class="goodsName">'+arr[i]["name"]+'</p><p class="goodsDetails">'+arr[i]["msg"]+'</p><p class="goodsPrice"><i>￥</i><span>'+arr[i]["price"]+'</span></p><p class="goodsTime"> <span>剩余: </span><i>0</i>天<i>0</i>小时<i>0</i>分<i>0</i>秒</p></div><div class="right"><img class="lazy" data-original="'+arr[i]["img"]+'" alt=""></div><div class="slide"><div class="slide_left"><img class="lazy" data-original="'+arr[i]["img"]+'" alt=""><ol><li><a href="#">评测</a>|</li><li><a href="#">视频</a>|</li><li><a href="#">点评</a></li></ol></div><div class="slide_right"><p class="slide_name" >'+arr[i]["name"]+'</p><p class="slide_price" >团购价：<span>¥'+arr[i]["price"]+'</span></p><p class="slide_ reference_price" >电商参考价：<span>¥'+arr[i]["price2"]+'</span></p><a href="#" class="slide_toPay">去团购</a></div></div></li>').appendTo($(".group_lunbo ul"))
+                $('<li class="clearfix goods"><div class="left"><p class="goodsName">'+arr[i]["name"]+'</p><p class="goodsDetails">'+arr[i]["msg"]+'</p><p class="goodsPrice"><i>￥</i><span>'+arr[i]["price"]+'</span></p><p class="goodsTime"> <span>剩余: </span><i>0</i>天<i>0</i>小时<i>0</i>分<i>0</i>秒</p></div><div class="right"><img src="'+arr[i]["img"]+'" alt=""></div><div class="slide"><div class="slide_left"><img src="'+arr[i]["img"]+'" alt=""><ol><li><a href="#">评测</a>|</li><li><a href="#">视频</a>|</li><li><a href="#">点评</a></li></ol></div><div class="slide_right"><p class="slide_name" >'+arr[i]["name"]+'</p><p class="slide_price" >团购价：<span>¥'+arr[i]["price"]+'</span></p><p class="slide_reference_price" >电商参考价：<span>¥'+arr[i]["price2"]+'</span></p><a href="#" class="slide_toPay">去团购</a></div></div></li>').appendTo($(".group_lunbo ul"))
 
             }
             for(var i=0; i<3; i++){
-                $('<li class="clearfix goods"><div class="left"><p class="goodsName">'+arr[i]["name"]+'</p><p class="goodsDetails">'+arr[i]["msg"]+'</p><p class="goodsPrice"><i>￥</i><span>'+arr[i]["price"]+'</span></p><p class="goodsTime"> <span>剩余: </span><i>0</i>天<i>0</i>小时<i>0</i>分<i>0</i>秒</p></div><div class="right"><img class="lazy" data-original="'+arr[i]["img"]+'" alt=""></div><div class="slide"><div class="slide_left"><img class="lazy" data-original="'+arr[i]["img"]+'" alt=""><ol><li><a href="#">评测</a>|</li><li><a href="#">视频</a>|</li><li><a href="#">点评</a></li></ol></div><div class="slide_right"><p class="slide_name" >'+arr[i]["name"]+'</p><p class="slide_price" >团购价：<span>¥'+arr[i]["price"]+'</span></p><p class="slide_ reference_price" >电商参考价：<span>¥'+arr[i]["price2"]+'</span></p><a href="#" class="slide_toPay">去团购</a></div></div></li>').appendTo($(".group_lunbo ul"))
+                $('<li class="clearfix goods"><div class="left"><p class="goodsName">'+arr[i]["name"]+'</p><p class="goodsDetails">'+arr[i]["msg"]+'</p><p class="goodsPrice"><i>￥</i><span>'+arr[i]["price"]+'</span></p><p class="goodsTime"> <span>剩余: </span><i>0</i>天<i>0</i>小时<i>0</i>分<i>0</i>秒</p></div><div class="right"><img src="'+arr[i]["img"]+'" alt=""></div><div class="slide"><div class="slide_left"><img src="'+arr[i]["img"]+'" alt=""><ol><li><a href="#">评测</a>|</li><li><a href="#">视频</a>|</li><li><a href="#">点评</a></li></ol></div><div class="slide_right"><p class="slide_name" >'+arr[i]["name"]+'</p><p class="slide_price" >团购价：<span>¥'+arr[i]["price"]+'</span></p><p class="slide_ reference_price" >电商参考价：<span>¥'+arr[i]["price2"]+'</span></p><a href="#" class="slide_toPay">去团购</a></div></div></li>').appendTo($(".group_lunbo ul"))
             }
             //动态设置ul宽度
             $(".group_lunbo ul").css("width",1200*Math.ceil($(".group_lunbo ul .goods").length/3)+"px");
@@ -122,7 +122,7 @@ $(function(){
                 $newOl.append($newLi2)
             }
             // 自动轮播函数
-            var index=0
+            var index=0;
             function autoPlay1(){
                 index++;
                 if(index==Math.ceil($(".group_lunbo ul .goods").length/3-1)){
@@ -144,7 +144,7 @@ $(function(){
             //页面加载开始自动轮播
             $(".group")[0].timer=setInterval(function(){
                 autoPlay1()
-            },2000)
+            },2000);
             $(".group").on("mouseenter",function(){
                 clearInterval(this.timer)
 
@@ -152,8 +152,7 @@ $(function(){
                 this.timer=setInterval(function(){
                     autoPlay1()
                 },2000)
-            })
-            lazy()
+            });
         })
 
     })();
@@ -258,68 +257,144 @@ $(function(){
             }
             lazy()
             $(".brand ul li").not($(".brand ul li:first")).on("mouseenter",function(){
-                $(this).find("img").stop().animate({
-                    width:"230px"
-                })
+                $(this).find("img").stop().scale(1,1.1)
 
             }).on("mouseleave",function(){
-                $(this).find("img").stop().animate({
-                    width:"200px"
-                })
+                $(this).find("img").stop().scale(1.1,1)
             })
         })
     })();
-    //e_Sports
+    //e_Sports_left
     (function(){
+        var num=0;//记录当前定时器作用的区域
         //TAB栏切换
-        $(".e_Sports .content .left h2 ul li").on("click",function(){
+         $(".e_Sports .content .left h2 ul li").on("click",function(){
+            clearInterval(timer);
+            num=$(this).index();
+            timer=setInterval(function(){
+                autoPlay(num)
+            }.bind(this),2000);
             $(this).addClass("active").siblings().removeClass("active");
             $(this).parents("h2").next(".list").find(".list_cat").eq($(this).index()).css("zIndex",5).siblings().css("zIndex",0)
         });
-        //轮播
-        for(var i=0; i<$(".list_cat_top ul li").length; i++){
-            var $newLi=$("<li></li>")
-            $newLi.appendTo($(".list_cat_top ol"));
-            if(i==0){
-                $newLi.addClass("active")
-            }
-            $newLi.on("click",function(){
-                index=$(this).index()-1;
-                autoPlay();
-            })
-
-        }
-        $(".list_cat_top ol").css({
-            width:$(".list_cat_top ul li").length*20+"px",
-            marginLeft:$(".list_cat_top ul li").length*20/2*-1+"px"
-        })
-        $(".list_cat_top ul li").eq(0).clone().appendTo($(".list_cat_top ul"));
-        $(".list_cat_top ul").css({
-            width:$(".list_cat_top ul li").length*594+"px"
+         // 鼠标移入移出  清除和开启定时器
+        $(".e_Sports .left .list_cat").on("mouseenter",function(){
+            clearInterval(timer);
+        }).on("mouseleave",function(){
+            timer=setInterval(function(){
+                autoPlay(num)
+            },2000)
         });
+        //轮播
+                //动态获取数据
+            $.ajax({
+                url:"http://127.0.0.1/zol/server/php/e_Sports.php",
+                type:"post",
+                dataType:"json",
+                data:{
+                    class:"left"
+                }
+            }).then(function(res){
+                //动态创建元素
+                for(var i=0; i<res.length; i++){
+                    if(res[i]["class2"]==0){
+                        $('<li><a href="#"><img src="'+res[i]["img"]+'" alt=""></a></li>').appendTo($(".list_cat").eq(Number(res[i]["class1"])).find(".list_cat_top ul"));
+                    }else {
+                        $('<li><a href="#"><img src="'+res[i]["img"]+'" alt=""></a><a href="#">'+res[i]["name"]+'</a><p class="price">'+res[i]["price"]+'</p></li>').appendTo($(".list_cat").eq(Number(res[i]["class1"])).find(".list_cat_bot ul"));
+                    }
+                }
+
+                //动态创建轮播小图标
+                for(var k=0; k<$(".list_cat").length; k++){
+                    for(var i=0; i<$(".list_cat").eq(k).find(".list_cat_top ul li").length; i++){
+                        var $newLi=$("<li></li>");
+                        $newLi.appendTo($(".list_cat").eq(k).find(".list_cat_top ol"));
+                        if(i==0){
+                            $newLi.addClass("active");
+                        }
+                        $newLi.on("click",function(){
+                            index=$(this).index()-1;
+                            autoPlay($(this).parents(".list_cat").index());
+                        })
+                    }
+                    $(".list_cat").eq(k).find(".list_cat_top ol").css({
+                        width:$(".list_cat").eq(k).find(".list_cat_top ul li").length*20+"px",
+                        marginLeft:$(".list_cat").eq(k).find(".list_cat_top ul li").length*20/2*-1+"px"
+                    });
+                    $(".list_cat").eq(k).find(".list_cat_top ul li").eq(0).clone().appendTo($(".list_cat").eq(k).find(".list_cat_top ul"));
+                    $(".list_cat").eq(k).find(".list_cat_top ul").css({
+                        width:$(".list_cat").eq(k).find(".list_cat_top ul li").length*594+"px"
+                    });
+                }
+            });
+
 
         //自动轮播函数
         var index=0;
-        function autoPlay(){
+        function autoPlay(ind){
             index++;
-            if(index>=$(".list_cat_top ul li").length-1){
-                $(".list_cat_top ul").animate({
+            if(index>=$(".list_cat").eq(ind).find(".list_cat_top ul li").length-1){
+                $(".list_cat").eq(ind).find(".list_cat_top ul").animate({
                     left:-594*index
                 },function(){
-                    $(".list_cat_top ul").css("left",0)
+                    $(".list_cat").eq(ind).find(".list_cat_top ul").css("left",0)
                 });
                 index=0
             }else {
-                $(".list_cat_top ul").animate({
+                $(".list_cat").eq(ind).find(".list_cat_top ul").animate({
                     left:-594*index
                 })
             }
-            $(".list_cat_top ol li").eq(index).addClass("active").siblings().removeClass("active");
+            $(".list_cat").eq(ind).find(".list_cat_top ol li").eq(index).addClass("active").siblings().removeClass("active");
         }
-        $(".list_cat_top").timer=setInterval(function(){
-            autoPlay()
+
+        //开启轮播
+        var timer=setInterval(function(){
+            autoPlay(0);
         },2000)
 
+
+    })();
+    //e_Sports_right
+    (function(){
+        $.ajax({
+            url:"http://127.0.0.1/zol/server/php/e_Sports.php",
+            type:"post",
+            dataType:"json",
+            data:{
+                class:"right"
+            }
+        }).then(function(res){
+            for(var i=0; i<res.length; i++){
+                $("<li><a href='' ><img src='"+res[i]["img"]+"'></a><a href='#'>"+res[i]["name"]+"</a><p>"+res[i]["price"]+"</p> </li>").appendTo($(".e_Sports .right .content ul"))
+            }
+        })
     })();
 
+    if($(window).scrollTop()>=500){
+        $(".search1 .logo img").attr("src","images/img/logo_fixed1.png");
+    }
+    $(window).on("scroll",function(){
+        if($(window).scrollTop()>=500){
+            $(".search1 .logo img").attr("src","images/img/logo_fixed1.png");
+            $(".search1").css({
+                position:"fixed",
+                top:0,
+                left:"50%",
+                marginLeft:-1*$(".search1").width()/2
+            });
+            $("nav").css({
+                paddingTop:"90px"
+            })
+        }else {
+            $(".search1 .logo img").attr("src","http://127.0.0.1/zol/src/images/img/2018logo_130x60.gif");
+            $(".search1").css({
+                position:"static",
+                marginLeft:0
+            })
+            $("nav").css({
+                paddingTop:"30px"
+            })
+        }
+    })
 });

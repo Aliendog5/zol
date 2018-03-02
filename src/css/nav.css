@@ -32,7 +32,7 @@ nav .main .list ol {
   top: 40px;
   width: 160px;
   height: 400px;
-  z-index: 998;
+  z-index: 9;
 }
 nav .main .list ol li {
   position: relative;

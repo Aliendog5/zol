@@ -1,9 +1,7 @@
-body {
-  background-color: #f7f7f7;
-}
 .ad {
   display: block;
   margin-top: 10px;
+  margin-bottom: 30px;
 }
 .iconfont {
   background-image: url("../images/img/head.png");
@@ -29,6 +27,10 @@ body {
 }
 .banner .active {
   background: yellow !important;
+}
+.all {
+  background-color: #f7f7f7;
+  padding-bottom: 40px;
 }
 .all .title {
   padding: 30px 0 14px;
@@ -372,6 +374,7 @@ body {
   box-shadow: 1px 1px 4px #ccc, -1px 1px 10px #ccc;
 }
 .all .brand ul li {
+  overflow: hidden;
   width: 230px;
   height: 340px;
   background-color: #fff;
@@ -425,16 +428,20 @@ body {
   border-bottom: 3px solid #fff;
 }
 .all .e_Sports .content .left {
+  float: left;
   width: 594px;
 }
 .all .e_Sports .content .left .list {
+  height: 467px;
   position: relative;
+}
+.all .e_Sports .content .left .list .list_cat:nth-child(1) {
+  z-index: 5;
 }
 .all .e_Sports .content .left .list .list_cat {
   position: absolute;
   top: 0;
   width: 594px;
-  height: 300px;
 }
 .all .e_Sports .content .left .list .list_cat .list_cat_top {
   height: 260px;
@@ -468,4 +475,61 @@ body {
 }
 .all .e_Sports .content .left .list .list_cat .list_cat_top ol .active {
   background-color: #c00;
+}
+.all .e_Sports .content .left .list .list_cat .list_cat_bot ul {
+  width: 594px;
+  background-color: #fff;
+}
+.all .e_Sports .content .left .list .list_cat .list_cat_bot ul li {
+  font-size: 14px;
+  float: left;
+  width: 160px;
+  padding: 0 19px;
+}
+.all .e_Sports .content .left .list .list_cat .list_cat_bot ul li a {
+  display: block;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #333;
+}
+.all .e_Sports .content .left .list .list_cat .list_cat_bot ul li a img {
+  width: 100%;
+}
+.all .e_Sports .content .left .list .list_cat .list_cat_bot ul li p {
+  color: #c00;
+}
+.all .e_Sports .content .right {
+  width: 594px;
+  float: right;
+}
+.all .e_Sports .content .right .content ul {
+  height: 467px;
+  background-color: #fff;
+}
+.all .e_Sports .content .right .content ul li {
+  height: 50%;
+  width: 198px;
+  float: left;
+  box-sizing: border-box;
+  padding: 20px;
+}
+.all .e_Sports .content .right .content ul li a:hover {
+  color: #c00;
+  text-decoration: underline;
+}
+.all .e_Sports .content .right .content ul li a {
+  color: #333;
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.all .e_Sports .content .right .content ul li a img {
+  display: block;
+  width: 160px;
+}
+.all .e_Sports .content .right .content ul li p {
+  color: #c00;
 }

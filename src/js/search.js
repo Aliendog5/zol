@@ -10,18 +10,7 @@ $(function(){
             $(this).find("p").css("borderBottom","1px solid #ccc");
             $(this).find("ul").css("display","none")
         });
-       if($.cookie("PHPSESSID")!=null){
-           $.ajax({
-               url : "http://127.0.0.1/zol/server/php/cart.php",
-               type : "post",
-               dataType : "json"
-           }).then(function(res){
-               $(".search1 ol li").eq(2).find("span").text(JSON.parse(res).length);
-           })
-       }else {
-           $(".search1 ol li").eq(2).find("span").text(JSON.parse($.cookie("list")||"[]").length);
 
-       }
 
 
     })

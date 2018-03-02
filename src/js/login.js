@@ -15,9 +15,8 @@ $(function(){
     $(".all").css("marginBottom","130px");
     $("#myform").on("submit",function(){
 
-
         if(flag){
-            $(".msg").text("")
+            $(".msg").text("");
             var data=$.toData($("#myform").serialize());
             data["userPwd"]=$.md5(data["userPwd"]);
             $.ajax({
@@ -26,16 +25,15 @@ $(function(){
                 dataType:"json",
                 data:data
             }).then(function(res){
+                console.log(res);
                 if(res["status"]){
-                    var arr=JSON.parse($.cookie("list")||"[]")
+                    var arr=JSON.parse($.cookie("list")||"[]");
                     for(var i=0; i<arr.length; i++){
                         $.ajax({
                             url:"http://127.0.0.1/zol/server/php/cart.php",
                             type:"post",
                             dataType:"json",
-                            data:{
-                                id:arr[i]
-                            }
+                            data:arr[i]
                         })
                     };
                     $.removeCookie("list");

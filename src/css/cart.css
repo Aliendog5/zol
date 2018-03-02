@@ -2,7 +2,7 @@
   width: 960px;
 }
 .all {
-  padding-top: 50px;
+  padding-top: 30px;
   overflow: hidden;
 }
 .all .logo {
@@ -16,6 +16,7 @@
   background-image: url(../images/img/step-bg.png);
   background-repeat: no-repeat;
   width: 90px;
+  padding-right: 10px;
   float: left;
   font: 14px/36px "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1";
   background-position: 100% -74px;
@@ -23,6 +24,7 @@
   text-align: center;
 }
 .all ul li:nth-child(1) {
+  color: #fff;
   background-position: 100% -37px;
   background-color: #e02d2d;
 }
@@ -30,7 +32,11 @@
   background-image: none;
 }
 .price p {
+  line-height: 30px;
   text-align: right;
+}
+.price p span {
+  color: red;
 }
 .price p a {
   display: inline-block;
@@ -42,50 +48,61 @@
   color: #fff;
   line-height: 22px;
 }
-table {
+.list table {
+  border: 1px solid #ccc;
   margin-top: 30px;
   border-collapse: collapse;
   border-spacing: 0;
 }
-table thead {
+.list table thead {
   border-top: 2px solid #c00;
   background-color: #ccc;
 }
-table thead th {
+.list table thead th {
   width: 110px;
   height: 40px;
 }
-table thead th:nth-child(1) {
+.list table thead th:nth-child(1) {
   width: 400px;
 }
-table tbody {
+.list table tbody {
   text-align: center;
 }
-table tbody .good {
+.list table tbody .good {
   box-sizing: border-box;
   padding: 10px;
 }
-table tbody .good img {
+.list table tbody .good img {
   float: left;
   width: 80px;
   height: 80px;
 }
-table tbody .good div {
+.list table tbody .good div {
   text-align: left;
   width: 300px;
   float: right;
 }
-table tbody .num span {
+.list table tbody .num span {
   display: inline-block;
   width: 30px;
   height: 20px;
   border: 1px solid #ccc;
 }
-table tbody .num a {
+.list table tbody .num a {
   border: 1px solid #ccc;
   display: inline-block;
   width: 20px;
   height: 20px;
+}
+.list .total {
+  text-align: right;
+  font-size: 14px;
+  line-height: 50px;
+}
+.list .total span {
+  color: red;
+  font-size: 18px;
+  font-weight: bold;
 }
 .pay {
   height: 35px;
@@ -109,4 +126,72 @@ table tbody .num a {
   background-image: url("../images/img/pic1.png");
   background-position: 0 -113px;
   color: #fff;
+}
+.like {
+  padding-top: 20px;
+}
+.like h2 {
+  font-size: 16px;
+  position: relative;
+  z-index: 2;
+  width: 130px;
+  text-align: center;
+  line-height: 30px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: 2px solid #c00;
+  border-bottom: 0;
+}
+.like ul {
+  width: 960px;
+  height: 208px;
+  border: 1px solid #ccc;
+  position: relative;
+  top: -1px;
+  box-sizing: border-box;
+  padding: 20px 0 13px 14px;
+}
+.like ul li {
+  padding: 10px;
+  float: left;
+}
+.like ul li a {
+  text-align: center;
+}
+.like ul li a img {
+  width: 160px;
+  height: 120px;
+  display: block;
+  border: 1px solid #ccc;
+}
+.like ul li a span {
+  color: #666;
+}
+.like ul li a p {
+  font-size: 16px;
+  font-weight: bold;
+  color: red;
+}
+.like ul li a:hover span {
+  color: red;
+  text-decoration: underline;
+}
+footer {
+  padding: 50px 0;
+  text-align: center;
+}
+footer .main {
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+}
+footer .main p {
+  line-height: 30px;
+}
+footer .main p a {
+  padding: 0 10px;
+  color: #333;
+}
+footer .main p a:hover {
+  text-decoration: underline;
+  color: #c00;
 }
