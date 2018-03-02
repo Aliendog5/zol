@@ -1,6 +1,7 @@
 header {
   height: 30px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background-color: #f5f5f5;
   border-bottom: 1px solid #e6e6e6;
 }
@@ -56,7 +57,8 @@ header ol .my_li:hover {
 }
 header ol .my_li:hover i {
   transtion: all 1s linear;
-  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 header ol .my_li:hover div {
   display: block;

@@ -10,7 +10,7 @@
 .search1 .menu ul li{cursor:pointer;float:left;padding:10px}
 .search1 .menu ul li a{color:#333;padding:5px}
 .search1 .menu ul li a:hover{background:#ccc}
-.search1 #myform{width:540px;height:36px;box-sizing:border-box;border:2px solid #ec3639;float:left;margin:12px 0 0 70px}
+.search1 #myform{width:540px;height:36px;-webkit-box-sizing:border-box;box-sizing:border-box;border:2px solid #ec3639;float:left;margin:12px 0 0 70px}
 .search1 #myform .text{height:31px;outline:0;padding-left:10px;width:280px}
 .search1 #myform .sub{height:32px;background:#ec3639;float:right;padding:0 20px;color:#fff;font-size:16px;cursor:pointer}
 .search1 #myform a{float:right;padding:0 5px;margin-top:7px;line-height:18px;background-color:#ccc;color:#333;margin-right:10px}

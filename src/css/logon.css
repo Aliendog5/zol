@@ -87,7 +87,8 @@ header .main p a:hover {
 .all .right {
   float: right;
   width: 300px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 50px;
 }
 .all .right .login {

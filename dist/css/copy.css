@@ -1,4 +1,4 @@
-.copy{box-sizing:border-box;padding:25px 0 30px;background-color:#000;height:174px}
+.copy{-webkit-box-sizing:border-box;box-sizing:border-box;padding:25px 0 30px;background-color:#000;height:174px}
 .copy .left{width:920px;float:left}
 .copy .left a:hover{text-decoration:underline}
 .copy .left p:nth-child(1) a{color:#fff}

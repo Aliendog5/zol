@@ -19,7 +19,7 @@ nav .main .list ol li:nth-child(5):hover .iconfont1{background-position:-35px -6
 nav .main .list ol li:nth-child(6) .iconfont1{width:19px;background-position:0 -91px}
 nav .main .list ol li:nth-child(6):hover .iconfont1{background-position:-30px -91px}
 nav .main .list ol div{display:none;position:absolute;left:160px;top:0;height:400px;width:680px;background-color:#fff}
-nav .main .list ol div p{width:500px;height:110px;box-sizing:border-box;padding:20px;text-align:left}
+nav .main .list ol div p{width:500px;height:110px;-webkit-box-sizing:border-box;box-sizing:border-box;padding:20px;text-align:left}
 nav .main .list ol div p a{display:inline;margin-right:20px;color:#333;font-size:12px}
 nav .main .list ol div p a:hover{color:#ec3639;text-decoration:underline}
 nav .main .list ol div a{display:block}

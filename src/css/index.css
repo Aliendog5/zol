@@ -85,7 +85,8 @@
 .all .group .group_lunbo ul .goods {
   position: relative;
   float: left;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 15px;
   background-color: pink;
   height: 100%;
@@ -164,7 +165,8 @@
   line-height: 26px;
   float: right;
   width: 248px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 15px;
 }
 .all .group .group_lunbo ul .goods .slide .slide_right .slide_name {
@@ -193,17 +195,20 @@
 }
 .all .coupon ul li {
   height: 100%;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   float: left;
   width: 243px;
 }
 .all .coupon ul li .coupon_1 {
   width: 226px;
   height: 100%;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 10px;
   float: left;
-  box-shadow: 1px 0 3px #e8e8e8;
+  -webkit-box-shadow: 1px 0 3px #e8e8e8;
+          box-shadow: 1px 0 3px #e8e8e8;
   background: #fff;
 }
 .all .coupon ul li .coupon_1 h4 {
@@ -327,7 +332,8 @@
   text-align: center;
   width: 182px;
   height: 182px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .all .choice .choice_content .top .left .left_bot ul li div h3 {
   line-height: 32px;
@@ -371,7 +377,8 @@
   margin-left: -12px;
 }
 .all .brand ul li:hover {
-  box-shadow: 1px 1px 4px #ccc, -1px 1px 10px #ccc;
+  -webkit-box-shadow: 1px 1px 4px #ccc, -1px 1px 10px #ccc;
+          box-shadow: 1px 1px 4px #ccc, -1px 1px 10px #ccc;
 }
 .all .brand ul li {
   overflow: hidden;
@@ -512,7 +519,8 @@
   height: 50%;
   width: 198px;
   float: left;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 20px;
 }
 .all .e_Sports .content .right .content ul li a:hover {

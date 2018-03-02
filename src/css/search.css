@@ -71,7 +71,8 @@
 .search1 #myform {
   width: 540px;
   height: 36px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border: 2px  solid #ec3639;
   float: left;
   margin: 12px 0 0 70px;

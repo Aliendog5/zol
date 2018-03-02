@@ -104,7 +104,8 @@ nav .main .list ol div {
 nav .main .list ol div p {
   width: 500px;
   height: 110px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 20px;
   text-align: left;
 }

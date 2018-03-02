@@ -69,7 +69,8 @@
   text-align: center;
 }
 .list table tbody .good {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 10px;
 }
 .list table tbody .good img {
@@ -148,7 +149,8 @@
   border: 1px solid #ccc;
   position: relative;
   top: -1px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 20px 0 13px 14px;
 }
 .like ul li {

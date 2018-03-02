@@ -1,12 +1,12 @@
 .main{width:1200px}
 .info{margin-top:20px;border:1px solid #ccc;overflow:hidden;padding-top:30px}
-.info .left{position:relative;padding-left:20px;box-sizing:border-box;width:420px;float:left}
+.info .left{position:relative;padding-left:20px;-webkit-box-sizing:border-box;box-sizing:border-box;width:420px;float:left}
 .info .left .smallImg{position:relative}
 .info .left .smallImg .smallArea{display:none;background-color:#00f;opacity:.1;position:absolute;top:0;width:200px;height:200px}
 .info .left .bigArea{z-index:999;display:none;width:400px;height:400px;border:1px solid #ccc;position:absolute;top:0;right:-400px;overflow:hidden}
 .info .left .bigArea .bigImg{position:absolute;top:0;left:0}
 .info .left ul{width:420px;padding-top:20px}
-.info .left ul li{margin-left:10px;box-sizing:border-box;width:70px;height:70px;float:left}
+.info .left ul li{margin-left:10px;-webkit-box-sizing:border-box;box-sizing:border-box;width:70px;height:70px;float:left}
 .info .left ul li img{width:100%}
 .info .left ul li.active{border:2px solid #c00}
 .info .left .focus,.info .left .share{color:#666}
@@ -15,7 +15,7 @@
 .info .left .focus:hover i,.info .left .share:hover i{opacity:1}
 .info .left .focus i{background-position:-41px -283px}
 .info .left .share i{background-position:-41px -309px}
-.info .right{width:550px;box-sizing:border-box;padding:20px;float:left}
+.info .right{width:550px;-webkit-box-sizing:border-box;box-sizing:border-box;padding:20px;float:left}
 .info .right h2{font-size:16px;line-height:22px}
 .info .right .msg{font-size:14px;color:#999}
 .info .right ul li span{float:left;width:65px;color:#666;line-height:30px}
@@ -30,7 +30,7 @@
 .info .right ul .delivery{position:relative}
 .info .right ul .delivery i{border:1px solid #ccc;line-height:20px;padding:0 10px;margin-right:20px}
 .info .right ul .delivery i strong{display:inline-block;vertical-align:middle;width:7px;height:4px;background:url(../images/img/topbar_ico.png) 0 0 no-repeat;background-position:0 -45px}
-.info .right ul .delivery .menu{display:none;border:1px solid #ccc;box-sizing:border-box;padding:10px;position:absolute;top:23px;left:63px;width:400px}
+.info .right ul .delivery .menu{display:none;border:1px solid #ccc;-webkit-box-sizing:border-box;box-sizing:border-box;padding:10px;position:absolute;top:23px;left:63px;width:400px}
 .info .right ul .delivery .menu ul{border-bottom:2px solid #c00}
 .info .right ul .delivery .menu ul li{float:left;width:80px;text-align:center;border:1px solid #ccc;border-bottom:0;margin:0 10px;line-height:20px;background-color:#fff;position:relative;top:2px;z-index:-1}
 .info .right ul .delivery .menu ul .active{border:2px solid #c00;border-bottom:0;z-index:1}
@@ -58,10 +58,10 @@
 .info .right ul .num strong{margin-left:10px;float:left}
 .info .right .addToCart,.info .right .buy{cursor:pointer;display:inline-block;text-align:center;line-height:50px;font-size:20px;width:140px;height:50px;margin-top:20px}
 .info .right .buy{background:#c00;color:#fff;margin-left:100px;margin-right:20px}
-.info .right .addToCart{box-sizing:border-box;color:#c00;border:1px solid #ffd9d9;background-color:#ffeded}
+.info .right .addToCart{-webkit-box-sizing:border-box;box-sizing:border-box;color:#c00;border:1px solid #ffd9d9;background-color:#ffeded}
 .like{margin:20px auto;border:1px solid #ccc}
-.like h2{font-size:16px;padding-left:20px;box-sizing:border-box;font:14px/32px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";line-height:32px;border-bottom:1px solid #ccc;background:#fafafa}
-.like ul{width:1200px;position:relative;top:-1px;box-sizing:border-box;padding:20px 0 13px 14px}
+.like h2{font-size:16px;padding-left:20px;-webkit-box-sizing:border-box;box-sizing:border-box;font:14px/32px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";line-height:32px;border-bottom:1px solid #ccc;background:#fafafa}
+.like ul{width:1200px;position:relative;top:-1px;-webkit-box-sizing:border-box;box-sizing:border-box;padding:20px 0 13px 14px}
 .like ul li{padding:10px 20px;float:left}
 .like ul li a{text-align:center}
 .like ul li a img{width:150px;height:150px;display:block;border:1px solid #ccc}
@@ -69,8 +69,8 @@
 .like ul li a p{font-size:16px;font-weight:700;color:red}
 .like ul li a:hover span{color:red;text-decoration:underline}
 .details .left{width:200px;float:left}
-.details .left h3{height:33px;line-height:33px;box-sizing:border-box;border:1px solid #ccc;background-color:#f7f7f7;padding:0 15px;color:#666}
-.details .left dl dt form{border:1px solid #ccc;border-top:0;box-sizing:border-box;padding:15px}
+.details .left h3{height:33px;line-height:33px;-webkit-box-sizing:border-box;box-sizing:border-box;border:1px solid #ccc;background-color:#f7f7f7;padding:0 15px;color:#666}
+.details .left dl dt form{border:1px solid #ccc;border-top:0;-webkit-box-sizing:border-box;box-sizing:border-box;padding:15px}
 .details .left dl dt form input{width:48px;border:1px solid #ccc;height:24px;margin-bottom:10px}
 .details .left dl dt form input:nth-child(1){width:120px}
 .details .left dl dd{margin-top:20px}
@@ -82,7 +82,7 @@
 .details .left dl dd ul li ol li{line-height:22px;padding-left:15px;background:url(../images/img/bg1.png) no-repeat -56px -468px}
 .details .left dl dd ul li ol li a{color:#999}
 .details .right{margin-left:10px;width:990px;float:right}
-.details .right .right_menu{height:33px;background-color:#f7f7f7;box-sizing:border-box;border:1px solid #ccc}
+.details .right .right_menu{height:33px;background-color:#f7f7f7;-webkit-box-sizing:border-box;box-sizing:border-box;border:1px solid #ccc}
 .details .right .right_menu li{cursor:pointer;line-height:31px;padding:0 15px;float:left;border-right:1px solid #ccc;position:relative}
 .details .right .right_menu li i{color:#c00;font-weight:700;font-size:14px}
 .details .right .right_menu li:hover{color:#c00}

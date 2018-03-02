@@ -10,7 +10,8 @@
 .info .left {
   position: relative;
   padding-left: 20px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 420px;
   float: left;
 }
@@ -48,7 +49,8 @@
 }
 .info .left ul li {
   margin-left: 10px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 70px;
   height: 70px;
   float: left;
@@ -88,7 +90,8 @@
 }
 .info .right {
   width: 550px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 20px;
   float: left;
 }
@@ -158,7 +161,8 @@
 .info .right ul .delivery .menu {
   display: none;
   border: 1px solid #ccc;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 10px;
   position: absolute;
   top: 23px;
@@ -339,7 +343,8 @@
   margin-right: 20px;
 }
 .info .right .addToCart {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   color: #c00;
   border: 1px solid #ffd9d9;
   background-color: #ffeded;
@@ -351,7 +356,8 @@
 .like h2 {
   font-size: 16px;
   padding-left: 20px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font: 14px/32px "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1";
   line-height: 32px;
   border-bottom: 1px solid #ccc;
@@ -361,7 +367,8 @@
   width: 1200px;
   position: relative;
   top: -1px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 20px 0 13px 14px;
 }
 .like ul li {
@@ -398,7 +405,8 @@
 .details .left h3 {
   height: 33px;
   line-height: 33px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border: 1px solid #ccc;
   background-color: #f7f7f7;
   padding: 0 15px;
@@ -407,7 +415,8 @@
 .details .left dl dt form {
   border: 1px solid #ccc;
   border-top: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 15px;
 }
 .details .left dl dt form input {
@@ -462,7 +471,8 @@
 .details .right .right_menu {
   height: 33px;
   background-color: #f7f7f7;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border: 1px solid #ccc;
 }
 .details .right .right_menu li {

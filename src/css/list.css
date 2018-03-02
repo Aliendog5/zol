@@ -26,7 +26,8 @@
 .list_menu ol li {
   width: 240px;
   height: 380px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 20px;
   float: left;
 }
@@ -40,7 +41,8 @@
 .ad {
   width: 220px;
   float: right;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .ad ul {
   border: 1px solid #ccc;
@@ -142,7 +144,8 @@
   height: 32px;
   border: 2px solid #c00;
   outline: none;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   float: left;
 }
 .myform input[type="text"] {
