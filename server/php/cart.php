@@ -11,7 +11,7 @@ header("Access-Control-Allow-Origin:*");//允许跨域
 if (empty($_REQUEST)){
     //获取购物车数据
     session_start();
-    $user_name=session_id();
+    $user_name=$_SESSION["userName"];
     $conn=new mysqli("127.0.0.1","root","","zol_shopping");
     mysqli_query($conn,"set names utf8");
     $sql="select * from cart as a INNER join list_1 as b on a.good_id=b.id where a.user_name='".$user_name."'";
@@ -26,7 +26,7 @@ if (empty($_REQUEST)){
 }else{
     // 添加购物车到数据库
     session_start();
-    $user_name=session_id();
+    $user_name=$_SESSION["userName"];
     $conn=new mysqli("127.0.0.1","root","","zol_shopping");
     mysqli_query($conn,"set names utf8");
     $sql="insert into cart (user_name,good_id,cart_color,cart_suit,cart_num) values ('".$user_name."',".$_REQUEST["id"].",'".$_REQUEST["color"]."','".$_REQUEST["suit"]."',".$_REQUEST["num"].")";

@@ -1,0 +1,10 @@
+//创建require清单模块
+define("config",[],function(){
+    require.config({
+        paths:{
+            "html5":["http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min","lib/html5shiv/html5shiv"],
+            "jquery":["lib/jquery/jquery-3.3.1"],
+            "jquery-cookie":["lib/jquery.cookie/jquery.cookie"]
+        }
+    })
+});

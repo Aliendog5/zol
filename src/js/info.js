@@ -14,7 +14,6 @@ $(function(){
             //放大镜
 
             var obj = res[0];
-            console.log(obj);
             for(var key in obj){
                 if(obj[key]!=null){
                     switch(key){
@@ -155,42 +154,48 @@ $(function(){
                     num : $(".info .right .num .count").text()
                 };
                 //判断登录状态
-                if($.cookie("PHPSESSID") != null){
-                    $.ajax({
-                        url : "http://127.0.0.1/zol/server/php/cart.php",
-                        type : "post",
-                        dataType : "json",
-                        data : data
-                    }).then(function(res){
-
-                        if(res=="成功"){
-                            alert("操作成功");
-
-                            $(".slide_aside ul li").eq(2).find("a span").text(Number($("header .cart span").text())+Number($(".info .right .num .count").text()));
-                            $(".cart span").text(Number($("header .cart span").text())+Number($(".info .right .num .count").text()));
-                        }
-
-                    });
-
-
-                } else {
-                    var arr = JSON.parse($.cookie("list") || "[]");
-                    var flag = true;
-                    for(var i = 0; i < arr.length; i++){
-                        if(arr[i]["id"] == data["id"]){
-                            arr[i]["num"] = Number(data["num"]) + Number(arr[i]["num"]);
-                            flag = false;
-                        }
-                    }
-                    if(flag){
-                        arr.push(data)
-                    }
-                    alert("操作成功");
-                    $(".search1 ol li").eq(2).find("span").text(Number($(".search1 ol li").eq(2).find("span").text())+Number($(".info .right .num .count").text()));
-                    $(".cart span").text(Number($(".search1 ol li").eq(2).find("span").text())+Number($(".info .right .num .count").text()));
-                    $(".slide_aside ul li").eq(2).find("a span").text(Number($(".search1 ol li").eq(2).find("span").text())+Number($(".info .right .num .count").text()));
-                    $.cookie("list", JSON.stringify(arr))
-                }
+                $.ajax({
+                    url:"../server/php/loginStatus.php"
+                }).then(function(res){
+					console.log(res);
+					if(res=="true"){
+						$.ajax({
+							url : "http://127.0.0.1/zol/server/php/cart.php",
+							type : "post",
+							dataType : "json",
+							data : data
+						}).then(function(res){
+			
+							if(res=="成功"){
+								alert("操作成功");
+				
+								$(".slide_aside ul li").eq(2).find("a span").text(Number($("header .cart span").text())+Number($(".info .right .num .count").text()));
+								$(".cart span").text(Number($("header .cart span").text())+Number($(".info .right .num .count").text()));
+							}
+			
+						});
+		
+		
+					} else {
+						var arr = JSON.parse($.cookie("list") || "[]");
+						var flag = true;
+						for(var i = 0; i < arr.length; i++){
+							if(arr[i]["id"] == data["id"]){
+								arr[i]["num"] = Number(data["num"]) + Number(arr[i]["num"]);
+								flag = false;
+							}
+						}
+						if(flag){
+							arr.push(data)
+						}
+						alert("操作成功");
+						$(".search1 ol li").eq(2).find("span").text(Number($(".search1 ol li").eq(2).find("span").text())+Number($(".info .right .num .count").text()));
+						$(".cart span").text(Number($(".search1 ol li").eq(2).find("span").text())+Number($(".info .right .num .count").text()));
+						$(".slide_aside ul li").eq(2).find("a span").text(Number($(".search1 ol li").eq(2).find("span").text())+Number($(".info .right .num .count").text()));
+						$.cookie("list", JSON.stringify(arr))
+					}
+                })
+                
             })
         });
     })();

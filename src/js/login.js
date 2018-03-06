@@ -25,7 +25,6 @@ $(function(){
                 dataType:"json",
                 data:data
             }).then(function(res){
-                console.log(res);
                 if(res["status"]){
                     var arr=JSON.parse($.cookie("list")||"[]");
                     for(var i=0; i<arr.length; i++){

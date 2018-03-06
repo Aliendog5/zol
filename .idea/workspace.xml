@@ -2,7 +2,155 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c14ced82-c260-4e5f-b8b6-639d81e7a7e3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/server/php/loginStatus.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/js/config.js" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/dist/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/header.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/index-footer.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" afterPath="$PROJECT_DIR$/dist/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/js/cart.js" afterPath="$PROJECT_DIR$/dist/js/cart.js" />
+      <change beforePath="$PROJECT_DIR$/dist/js/header.js" afterPath="$PROJECT_DIR$/dist/js/header.js" />
+      <change beforePath="$PROJECT_DIR$/dist/js/info.js" afterPath="$PROJECT_DIR$/dist/js/info.js" />
+      <change beforePath="$PROJECT_DIR$/dist/js/login.js" afterPath="$PROJECT_DIR$/dist/js/login.js" />
+      <change beforePath="$PROJECT_DIR$/dist/nav.html" afterPath="$PROJECT_DIR$/dist/nav.html" />
+      <change beforePath="$PROJECT_DIR$/server/.idea/workspace.xml" afterPath="$PROJECT_DIR$/server/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/server/php/cart.php" afterPath="$PROJECT_DIR$/server/php/cart.php" />
+      <change beforePath="$PROJECT_DIR$/server/php/login.php" afterPath="$PROJECT_DIR$/server/php/login.php" />
+      <change beforePath="$PROJECT_DIR$/server/php/out.php" afterPath="$PROJECT_DIR$/server/php/out.php" />
+      <change beforePath="$PROJECT_DIR$/server/php/remove.php" afterPath="$PROJECT_DIR$/server/php/remove.php" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/Cg-4WVU18MaIFM-CAAGhJaMaFnoAAB-4AOi-HkAAaE9205.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/Cg-4WVUfrCSIbahlAAn5wElVS9wAAA2wgDwuG8ACfnY737.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJ1lCT26IU93-AABMaUsZjQQAAdCeQEZL3EAAEyB251.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJ1lCUV2IMl7WAABac3tyjmAAAdCfAMllN8AAFqL290.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJ1lCW9qIFk0RAAAhaWesBYsAAdCjAMYu50AACGB730.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJ1lCXjGIVX8BAAAbqA9Xi_AAAdCjwN7qN4AABvA947.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJ1lHdf-IYjltAAB_sKdSjlAAAdHeQOjqLUAAH_I487.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJ1lHedWIL8rHAAAnvd8X3JoAAdHgQO3NuUAACfV827.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJ1lHefGILrduAAAnALwHdqgAAdHggAJHEYAACcY118.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJ1lHegqIQp9zAAApsdDHXDkAAdHggBf_-MAACnJ002.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJ1lTXBCIa-WDAAVOO3BXYW0AAdp3QOrulcABU5T382.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJ1lmzz2IaZvOAAAXmrQxQaAAAedGgJlEjAAABey764.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJ1lwJvOIDEIuAAE7xUAKwdMAAe4qwDwqZ0AATvd377.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJ1mtHc2IPd7-AABbxfWp83kAAgLIgKJd3kAAFvd753.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJ1mtHtuIGz9uAABcBS3GIGYAAgLJAJdiwcAAFwd350.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJ1muOXmIYehXAAForTE1ZqcAAgM8gIvoHEAAWjF285.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJ1nbPPWIBVg9AADk1NqaENgAAhHNwD9elQAAOTs333.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJ1ngYTmIFr2AAABKYNDq9vgAAhNiQJ_hIsAAEp4024.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJ1nnDWWIcoKkAABGZ9wQiuYAAhXggAMvWAAAEZ_511.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJ1nnElGINVavAABL_KxGWs8AAhXiwHbrv4AAEwU004.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJ1o43KaIM_sqAACaDZi8d7MAAjS_AEymScAAJol934.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJ1oD7qCIWXe0AABzQeHMD7kAAh-cgDBJFIAAHNZ986.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJ1oFapWIAiupAAB55rEW9YcAAiBuQErme4AAHn-529.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJ1oeVBmIae78AABGTAY30fYAAijewBxlyoAAEZk116.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJ1p3u-qIVVjvAABRU5xyOQ8AAkqpwBHhTcAAFFr582.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJ1p5VryIBoQ7AABckDBEB1sAAksGAAXwLIAAFyo173.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJ1p7voOINoFZAACN8vSS9kMAAkuFgBCQSoAAI4K073.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJ1p9CT2IB2oXAAJRutl8PJMAAkvSQOZZxIAAlHS405.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJ1pFp5CIcMUdAACOQfj3GFcAAjpAwN3beoAAI5Z132.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJ1pFpX-IV9MXAACLJ0zIzjMAAjpAgBq-C8AAIs_329.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJ1pFpi-IccrVAACjFhsaklwAAjpAgH88i8AAKMu628.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJ1pFpm2IZ0ysAACDImWAefUAAjpAgKbZaIAAIM6606.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJ1pMV5CIUNE5AAArhGpNXwkAAjw0gN8YkgAACuc103.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJ1pMetOITOmrAAA3xP71DhwAAjw-wOAS8MAADfc091.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJ1pMh2OIZ5JCAAB8tjFIb7sAAjxDwOr16QAAHzO678.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJ1pXJ5CIYAtoAABTaH_knisAAkBxACzaWIAAFOA666.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJ1pext-IXANbAAA-ZpxfLoEAAkJbwPPJewAAD5-476.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJ1pgTG6IdLGqAAA3Dfo3PQsAAkLmQIhM5EAADcl284.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJ1pgTV2IIj8VAABmdFFOUzwAAkLmgEOQHwAAGaM670.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJ1pgTnuIbVHXAABZ5F7pT2IAAkLnAPPe38AAFn8673.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJ1plqaiIeEHzAAF5-rECrEQAAkRpgG--mYAAXoS584.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJ1pxdsKIauuoAABXghR0GSUAAkhrAB6CgMAAFea006.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJ1pxiLCIbDFaAAJWGZ459OoAAkhwwEonQcAAlYx085.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJ1qPcLWIXCnMAABn1dpJag0AAk7wQJjT88AAGft038.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJ1qPcc2IergSAABM4jJ5gt4AAk7wwHrli0AAEz6619.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJliz_e-Icy7AAAGm2z0BeegAAaPNgE4y7wAAabz878.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJlkr3jeIcDFfAAOSzpxeObkAAcrpAJ9aAAAA5Lm532.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJllCUMiIYd3kAABfJChgOXsAAdCewLGlW0AAF88197.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJllCWo6IAExhAAApVVFt0SgAAdChgPY0OUAAClt434.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJllCXQOIaytaAAAp1QTu1O8AAdCjgJT0jkAACnt400.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJllHd22IKhAjAACFbwMvZ74AAdHewPsTzkAAIWH666.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJllHd8GIC1hWAAB2k_vNXg0AAdHfAKbaE8AAHar363.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJllHebWIJGyVAAA33Too0UAAAdHgQL-iFYAADf1167.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJllTW12IYzm-AAHIYBNt59QAAdp2wPMDg8AAch4067.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJllTWBKIFvafAAKoAvJyVJIAAdpzwJCQ44AAqga363.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJllTWkGIXc3VAAEawBmnCnsAAdp2AGtFCIAARrY654.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJlltvF2IJYPAAABCrXZAb1kAAeytwOsDI4AAELF956.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJlm3W1KIdOv9AABDXvifjHoAAgavQLHXQQAAEN2205.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJlmH1aeIUw6yAAAaztjPVa4AAfdZgMSA58AABrm059.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJlmIJAyIceUwAAH6JGsXdMgAAfd8ADiRlYAAfo8946.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJlnZ1UmIRnyLAAFYCjfD3rgAAhFuQGocjEAAVgi713.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJlnbKaqILwc6AABkEPmS_hwAAhHHQEagW4AAGQo167.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJlndsoqIHiZKAAB8wBOvGpAAAhKUwOW26UAAHzY530.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJlndtEKIJYNZAADjZ1wLE6QAAhKVwKR3AUAAON_900.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJlngYXGIMYQPAABuKpsnXk8AAhNiQPl_AIAAG5C016.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJlngYZiIViJ_AABfbfycT5IAAhNigCrnVgAAF-F050.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJlo4wN6IfGVkAAFNAomN-tcAAjS0AI-KlIAAU0a501.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJlo7PEaIWeMxAAFyjv3JxtAAAjWyQDrrqIAAXKm027.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJloPqx-IKiHcAAHJ-fTai2sAAiQ_gOcXNYAAcoR571.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJloeTkaIIDItAABeK9Yb760AAijcQKv4i0AAF5D170.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJloebb-IBPfZAAA3LrKFCeEAAijrQDuZUoAADdG611.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJlpFpZ6IGBR4AABwGxJjq4UAAjpAgDmZ90AAHAz948.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJlpFphGIO03bAABtH3nOZOgAAjpAgHMdmgAAG03217.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJlpMVbWIayNIAAAg4CkPxtsAAjwzwLfpsIAACD4003.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJlpMbm6IZHlHAAA-eyaTPzcAAjw6gKgwTsAAD6T122.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJlpMcmuISSRyAAA6hl-tVg4AAjw7wOcUTIAADqe965.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJlpMdMyIfHtbAABWawSoLJMAAjw8QMgNecAAFaD819.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJlpMgKuIfFHLAAB2XxlgH_cAAjxBAJIWd0AAHZ3775.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJlpMoUSIAlhCAABgJlgihNsAAjxPgPcXh0AAGA-501.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJlpev_GIIofbAAMwr2KuARoAAkJXwFBLK8AAzDH321.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJlpex0yIDDkeAAA1H23a3ScAAkJcAB1c8AAADU3882.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJlpeyMiIFkoOAAA5znsauvMAAkJcwB49NEAADnm254.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJlpgTt-IFVB7AABUQeWZbDcAAkLngAlbhUAAFRZ727.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJlpmo2eIUBQ1AAB5VQgAneUAAkShAJEIfMAAHlt073.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/ChMkJlpmpPaIbhapAABeZh6FQWwAAkShgO_lhoAAF5-719.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/api" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/bxSlider.min.js.下载" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/countDown.js.下载" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/getscript" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/h.js.下载" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/home.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/home.js.下载" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/index.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/jquery-1.8.1.js.下载" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/menuAim.js.下载" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/p.ht" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/pa" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/perfect-scrollbar.jquery.min.js.下载" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/photo.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/public_footer.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/public_head.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/public_head.js.下载" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/pv.js.下载" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/pvhit0001(1).gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/pvhit0001(2).gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/pvhit0001(3).gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/pvhit0001.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/qr.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/reset.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/saved_resource.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/scrollBar.js.下载" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/selectShowNoId.js.下载" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/shopLoginBox.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/shopLoginLayer.js.下载" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/shop_wechat.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/side_toolbar.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/side_toolbar.js.下载" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/side_toolbar_fun_v1.0.js.下载" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/sitenav.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/tuan-pop.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Z商城(ZOL.COM)-中国专业3C数码网购商城｜正品低价 放心购_files/tuan-pop.js.下载" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/header.html" afterPath="$PROJECT_DIR$/src/header.php" />
+      <change beforePath="$PROJECT_DIR$/src/images/img/ChMkJ1pbKfaILFoQAADczAcSthUAAkFXgBGK2cAANzk109.jpg" afterPath="$PROJECT_DIR$/src/images/img/ChMkJ1pbKfaILFoQAADczAcSthUAAkFXgBGK2cAANzk109.jpg" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" afterPath="$PROJECT_DIR$/src/index.html" />
+      <change beforePath="$PROJECT_DIR$/src/js/cart.js" afterPath="$PROJECT_DIR$/src/js/cart.js" />
+      <change beforePath="$PROJECT_DIR$/src/js/header.js" afterPath="$PROJECT_DIR$/src/js/header.js" />
+      <change beforePath="$PROJECT_DIR$/src/js/index.js" afterPath="$PROJECT_DIR$/src/js/index.js" />
+      <change beforePath="$PROJECT_DIR$/src/js/info.js" afterPath="$PROJECT_DIR$/src/js/info.js" />
+      <change beforePath="$PROJECT_DIR$/src/js/lib/require_js/require.js" afterPath="$PROJECT_DIR$/src/js/lib/require.js/require.js" />
+      <change beforePath="$PROJECT_DIR$/src/js/login.js" afterPath="$PROJECT_DIR$/src/js/login.js" />
+      <change beforePath="$PROJECT_DIR$/src/nav.html" afterPath="$PROJECT_DIR$/src/nav.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,211 +164,71 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gulpfile.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="28" column="30" lean-forward="false" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
-              <folding>
-                <element signature="e#228#365#0" expanded="true" />
-                <element signature="e#400#866#0" expanded="true" />
-                <element signature="e#1309#1437#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="aside.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dist/css/aside.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="5" column="168" lean-forward="false" selection-start-line="5" selection-start-column="168" selection-end-line="5" selection-end-column="168" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dist/css/base.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cart.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dist/css/cart.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="10" column="92" lean-forward="false" selection-start-line="10" selection-start-column="92" selection-end-line="10" selection-end-column="92" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="aside.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dist/aside.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/header.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="975">
-              <caret line="39" column="30" lean-forward="false" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="copy.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/copy.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="footer.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/footer.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="footer_index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dist/footer_index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="657" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="footer_index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/footer_index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="info.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/info.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="list.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/list.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="logon.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/logon.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="nav.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/nav.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2250">
-              <caret line="90" column="17" lean-forward="false" selection-start-line="90" selection-start-column="17" selection-end-line="90" selection-end-column="17" />
-              <folding>
-                <marker date="1519969667868" expanded="true" signature="4114:4206" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="search.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/search.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1250">
-              <caret line="50" column="12" lean-forward="false" selection-start-line="50" selection-start-column="12" selection-end-line="50" selection-end-column="12" />
-              <folding>
-                <marker date="1519969668124" expanded="true" signature="1512:1582" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="aside.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/aside.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
+            <state relative-caret-position="442">
               <caret line="17" column="28" lean-forward="false" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="aside.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/aside.js">
+      <file leaf-file-name="cart.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cart.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="18" column="3" lean-forward="false" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
-              <folding>
-                <element signature="e#12#656#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-936">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cart.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/cart.js">
+      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/header.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="416">
+              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/js/header.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-156">
+              <caret line="15" column="26" lean-forward="false" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dist/header.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="468">
+              <caret line="16" column="12" lean-forward="false" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="8" column="64" lean-forward="true" selection-start-line="8" selection-start-column="64" selection-end-line="8" selection-end-column="64" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dist/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -242,10 +250,24 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/header.html" />
-        <option value="$PROJECT_DIR$/src/nav.html" />
-        <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/src/search.html" />
         <option value="$PROJECT_DIR$/src/aside.html" />
+        <option value="$PROJECT_DIR$/src/js/lib/jquery.cookie/jquery.cookie.js" />
+        <option value="$PROJECT_DIR$/src/js/index.js" />
+        <option value="$PROJECT_DIR$/src/js/config.js" />
+        <option value="$PROJECT_DIR$/src/index.html" />
+        <option value="$PROJECT_DIR$/src/js/login.js" />
+        <option value="$PROJECT_DIR$/src/header.php" />
+        <option value="$PROJECT_DIR$/server/php/cart.php" />
+        <option value="$PROJECT_DIR$/server/php/out.php" />
+        <option value="$PROJECT_DIR$/server/php/remove.php" />
+        <option value="$PROJECT_DIR$/src/js/info.js" />
+        <option value="$PROJECT_DIR$/server/php/loginStatus.php" />
+        <option value="$PROJECT_DIR$/src/js/cart.js" />
+        <option value="$PROJECT_DIR$/src/nav.html" />
+        <option value="$PROJECT_DIR$/gulpfile.js" />
+        <option value="$PROJECT_DIR$/dist/js/header.js" />
+        <option value="$PROJECT_DIR$/src/js/header.js" />
       </list>
     </option>
   </component>
@@ -258,9 +280,10 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="52" />
-    <option name="y" value="9" />
+    <option name="x" value="106" />
+    <option name="y" value="8" />
     <option name="width" value="1260" />
     <option name="height" value="720" />
   </component>
@@ -281,44 +304,49 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="zol" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zol" type="462c0819:PsiDirectoryNode" />
+              <item name="zol" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="zol" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zol" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="zol" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="dist" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="zol" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zol" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="zol" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="dist" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="zol" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zol" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="zol" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="dist" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="lib" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="zol" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zol" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="require_js" type="462c0819:PsiDirectoryNode" />
+              <item name="zol" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="dist" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="lib" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="require.js" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="zol" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zol" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -347,6 +375,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="c14ced82-c260-4e5f-b8b6-639d81e7a7e3" name="Default" comment="" />
@@ -356,34 +387,51 @@
       <updated>1519965981070</updated>
       <workItem from="1519966004050" duration="3081000" />
       <workItem from="1519981709544" duration="189000" />
-      <workItem from="1520040952247" duration="34000" />
+      <workItem from="1520040952247" duration="3104000" />
+      <workItem from="1520211198375" duration="1254000" />
+      <workItem from="1520303874690" duration="4216000" />
+      <workItem from="1520323428919" duration="5699000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3386000" />
+    <option name="totallyTimeSpent" value="17579000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2648855" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28366113" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24961832" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28757668" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24961832" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -397,130 +445,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/js/cart.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gulpfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="28" column="30" lean-forward="false" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
-          <folding>
-            <element signature="e#228#365#0" expanded="true" />
-            <element signature="e#400#866#0" expanded="true" />
-            <element signature="e#1309#1437#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/css/aside.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="168" lean-forward="false" selection-start-line="5" selection-start-column="168" selection-end-line="5" selection-end-column="168" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/css/base.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/css/cart.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="92" lean-forward="false" selection-start-line="10" selection-start-column="92" selection-end-line="10" selection-end-column="92" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/aside.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="975">
-          <caret line="39" column="30" lean-forward="false" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/copy.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/footer_index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="657" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/footer_index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/info.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -541,9 +465,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2250">
           <caret line="90" column="17" lean-forward="false" selection-start-line="90" selection-start-column="17" selection-end-line="90" selection-end-column="17" />
-          <folding>
-            <marker date="1519969667868" expanded="true" signature="4114:4206" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -551,29 +473,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1250">
           <caret line="50" column="12" lean-forward="false" selection-start-line="50" selection-start-column="12" selection-end-line="50" selection-end-column="12" />
-          <folding>
-            <marker date="1519969668124" expanded="true" signature="1512:1582" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/aside.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="17" column="28" lean-forward="false" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/aside.html" />
     <entry file="file://$PROJECT_DIR$/gulpfile.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#228#365#0" expanded="true" />
-            <element signature="e#400#866#0" expanded="true" />
-            <element signature="e#1309#1437#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -581,7 +489,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -589,7 +496,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -597,7 +503,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
           <caret line="10" column="92" lean-forward="false" selection-start-line="10" selection-start-column="92" selection-end-line="10" selection-end-column="92" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -605,7 +510,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -627,7 +531,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -638,19 +541,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dist/css/aside.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="168" lean-forward="false" selection-start-line="5" selection-start-column="168" selection-end-line="5" selection-end-column="168" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dist/css/base.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -658,53 +552,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
           <caret line="10" column="92" lean-forward="false" selection-start-line="10" selection-start-column="92" selection-end-line="10" selection-end-column="92" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dist/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-75">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="975">
-          <caret line="39" column="30" lean-forward="false" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cart.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2075">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/copy.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/copy.html" />
     <entry file="file://$PROJECT_DIR$/dist/footer_index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="657" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -749,50 +604,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gulpfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="28" column="30" lean-forward="false" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
-          <folding>
-            <element signature="e#228#365#0" expanded="true" />
-            <element signature="e#400#866#0" expanded="true" />
-            <element signature="e#1309#1437#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nav.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2250">
-          <caret line="90" column="17" lean-forward="false" selection-start-line="90" selection-start-column="17" selection-end-line="90" selection-end-column="17" />
-          <folding>
-            <marker date="1519969667868" expanded="true" signature="4114:4206" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/search.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1250">
+        <state relative-caret-position="1300">
           <caret line="50" column="12" lean-forward="false" selection-start-line="50" selection-start-column="12" selection-end-line="50" selection-end-column="12" />
-          <folding>
-            <marker date="1519969668124" expanded="true" signature="1512:1582" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/aside.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="17" column="28" lean-forward="false" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/cart.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
           <folding />
         </state>
       </provider>
@@ -801,13 +616,208 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
           <caret line="18" column="3" lean-forward="false" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/lib/jquery.cookie/jquery.cookie.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="116" column="4" lean-forward="true" selection-start-line="116" selection-start-column="4" selection-end-line="116" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="9" column="3" lean-forward="false" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/css/aside.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="5" column="168" lean-forward="false" selection-start-line="5" selection-start-column="168" selection-end-line="5" selection-end-column="168" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/logon.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="65" column="19" lean-forward="true" selection-start-line="65" selection-start-column="19" selection-end-line="65" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-250">
+          <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="6" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/php/out.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/php/cart.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="34" column="31" lean-forward="false" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
           <folding>
-            <element signature="e#12#656#0" expanded="true" />
+            <marker date="1520324123075" expanded="true" signature="451:550" ph="select * fro... cart" />
+            <marker date="1520324123075" expanded="true" signature="949:1131" ph="insert into cart... " />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/server/php/remove.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+          <folding>
+            <marker date="1520325108851" expanded="true" signature="413:496" ph="delete from cart... " />
+            <marker date="1520325108851" expanded="true" signature="737:851" ph="update cart... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="36" column="22" lean-forward="false" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/php/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="12" column="34" lean-forward="false" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+          <folding>
+            <marker date="1520322991659" expanded="true" signature="426:508" ph="select * fro... userinfo" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/php/loginStatus.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="10" column="5" lean-forward="false" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/info.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="158" column="18" lean-forward="false" selection-start-line="156" selection-start-column="16" selection-end-line="158" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/cart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="144" column="6" lean-forward="false" selection-start-line="144" selection-start-column="6" selection-end-line="144" selection-end-column="6" />
+          <folding>
+            <element signature="e#128#2744#0" expanded="false" />
+            <element signature="e#2749#5607#0" expanded="false" />
+            <element signature="e#4245#4636#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nav.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="972">
+          <caret line="101" column="20" lean-forward="false" selection-start-line="101" selection-start-column="20" selection-end-line="101" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/js/copy.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="15" column="22" lean-forward="false" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/js/header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/aside.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="17" column="28" lean-forward="false" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-936">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-156">
+          <caret line="15" column="26" lean-forward="false" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="16" column="12" lean-forward="false" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="8" column="64" lean-forward="true" selection-start-line="8" selection-start-column="64" selection-end-line="8" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
