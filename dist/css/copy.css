@@ -1,0 +1,10 @@
+.copy{-webkit-box-sizing:border-box;box-sizing:border-box;padding:25px 0 30px;background-color:#000;height:174px}
+.copy .left{width:920px;float:left}
+.copy .left a:hover{text-decoration:underline}
+.copy .left p:nth-child(1) a{color:#fff}
+.copy .left p{padding-top:20px;color:#999}
+.copy .left p a{padding:0 10px;color:#999}
+.copy .right{width:280px;float:right}
+.copy .right a{color:#fff;line-height:21px;float:left;width:106px;padding-left:34px;background:url(../images/img/icon.png) no-repeat}
+.copy .right a:nth-child(1):hover{text-decoration:underline}
+.copy .right a:nth-child(2){background-position:0 -22px}
