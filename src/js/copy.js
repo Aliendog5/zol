@@ -1,5 +1,3 @@
 $(function(){
-    $(".copy").load("copy.html",function(){
-
-    })
-})
+    $(".copy").load("copy.html",function(){})
+});

@@ -1,11 +1,13 @@
-
+    <?php
+    session_start();
+    ?>
     <div class="main">
         <ul class="user">
             <li>
                 <a href="index.html" class="index">商城首页</a>
             </li>
             <?php
-                session_start();
+
                 if(!empty($_SESSION["userName"])){
                     print_r('<li>您好<a <a href="#">'.$_SESSION["userName"].'</a></li><li><a href="#" class="loginOut">退出</a></li>');
                 }else{

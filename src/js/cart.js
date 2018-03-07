@@ -17,7 +17,7 @@ requirejs(["config"],function(){
 						var num=0;
 						$(".price p em").text(res.length);
 						var cartList=res;
-						
+						//动态生成商品列表
 						for(var i=cartList.length-1; i>=0; i--){
 							var $newTr=$('<tr data-info="'+cartList[i]["cart_id"]+'" data-id="'+cartList[i]["id"]+'"><td class="good"><img src="images/img/'+cartList[i]["img_list"]+'" alt=""><div><a href="#">'+cartList[i]["name"]+'</a><p>颜色：'+cartList[i]["cart_color"]+'</p><p>  套装：'+cartList[i]["cart_suit"]+'</p></div></td><td class="price">'+cartList[i]["price"]+'</td><td class="num"><a href="javascript:void(0)">-</a><span>'+cartList[i]["cart_num"]+'</span><a href="javascript:void(0)">+</a></td><td> --</td><td class="money">'+(cartList[i]["cart_num"]*cartList[i]["price"])+'</td><td class="caozuo"><a href="javascript:void(0)" class="remove">删除</a></td></tr>');
 							$newTr.appendTo($("#tab"));
@@ -71,11 +71,12 @@ requirejs(["config"],function(){
 									num:$(this).siblings("span").text()
 								}
 							})
-						})
+						});
 						$(".price p span i").text(num);
 						$(".list .total span").text("￥"+num);
 					})
 				}else {
+				    //没有登录的状态
 					var cartList=JSON.parse($.cookie("list")||"[]");
 					var num=0;
 					$(".price p em").text(cartList.length);
