@@ -2,7 +2,6 @@
 require(["config"],function(){
 	require(["jquery","jquery-cookie","md5","tools","idcode"],function($){
 		$(function(){
-			
 			require(["footer"]);
 			var flag=false;
 			$.idcode.setCode();
@@ -25,7 +24,7 @@ require(["config"],function(){
 					var data=$.toData($("#myform").serialize());
 					data["userPwd"]=$.md5(data["userPwd"]);
 					$.ajax({
-						url:"http://127.0.0.1/zol/server/php/login.php",
+						url:"../server/php/login.php",
 						type:"post",
 						dataType:"json",
 						data:data
@@ -34,7 +33,7 @@ require(["config"],function(){
 							var arr=JSON.parse($.cookie("list")||"[]");
 							for(var i=0; i<arr.length; i++){
 								$.ajax({
-									url:"http://127.0.0.1/zol/server/php/cart.php",
+									url:"../server/php/cart.php",
 									type:"post",
 									dataType:"json",
 									data:arr[i]

@@ -12,13 +12,13 @@ $(function(){
 				$(".user .loginOut").on("click", function(){
 					if(confirm("确定要退出登录码")){
 						$.ajax({
-							url : "http://127.0.0.1/zol/server/php/out.php"
-						})
+							url : "../server/php/out.php"
+						});
 						window.location.reload();
 					}
 				});
 				$.ajax({
-					url : "http://127.0.0.1/zol/server/php/cart.php",
+					url : "../server/php/cart.php",
 					type : "post",
 					dataType : "json"
 				}).then(function(res){

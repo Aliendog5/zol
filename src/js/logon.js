@@ -8,7 +8,7 @@ require(["config"],function(){
 					userName:{
 						required : true,
 						rangelength:[6,16],
-						remote:"http://127.0.0.1/zol/server/php/userNameTest.php"
+						remote:"../server/php/userNameTest.php"
 					},
 					userPwd:{
 						rangelength:[8,18]
@@ -54,11 +54,12 @@ require(["config"],function(){
 					var data=$.toData($("#myform").serialize());
 					data["userPwd"]=$.md5(data["userPwd"]);
 					$.ajax({
-						url:"http://127.0.0.1/zol/server/php/logon.php",
+						url:"../server/php/logon.php",
 						type:"post",
 						dataType:"json",
 						data:data
 					}).then(function(res){
+						
 						if(res["status"]){
 							if(confirm("注册成功！是否跳转到登录页面")){
 								window.location.href="login.html"

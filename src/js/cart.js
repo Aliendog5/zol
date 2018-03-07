@@ -9,7 +9,7 @@ requirejs(["config"],function(){
 				if(res=="true"){
 					//从数据库请求购物车数据
 					$.ajax({
-						url:"http://127.0.0.1/zol/server/php/cart.php",
+						url:"../server/php/cart.php",
 						type:"post",
 						dataType:"json"
 					}).then(function(res){
@@ -30,7 +30,7 @@ requirejs(["config"],function(){
 							$(this).parents("tr").remove();
 							// 删除数据库对应的数据
 							$.ajax({
-								url:"http://127.0.0.1/zol/server/php/remove.php",
+								url:"../server/php/remove.php",
 								type:"post",
 								dataType:"json",
 								data:{
@@ -43,14 +43,14 @@ requirejs(["config"],function(){
 						});
 						//跳转到详情页
 						$(".good").on("click",function(){
-							window.location.href="http://127.0.0.1/zol/src/info.html?id="+$(this).parents("tr").data("id");
+							window.location.href="info.html?id="+$(this).parents("tr").data("id");
 						});
 						//修改商品数量
 						$("#tab .num").find("a:first").on("click",function(){
 							$(this).siblings("span").text($(this).siblings("span").text()<=1?1:$(this).siblings("span").text()-1);
 							var data=$(this).parents("tr").data("info");
 							$.ajax({
-								url:"http://127.0.0.1/zol/server/php/remove.php",
+								url:"../server/php/remove.php",
 								type:"post",
 								dataType:"json",
 								data:{
@@ -63,7 +63,7 @@ requirejs(["config"],function(){
 							$(this).siblings("span").text(Number($(this).siblings("span").text())+1);
 							var data=$(this).parents("tr").data("info");
 							$.ajax({
-								url:"http://127.0.0.1/zol/server/php/remove.php",
+								url:"../server/php/remove.php",
 								type:"post",
 								dataType:"json",
 								data:{
@@ -84,7 +84,7 @@ requirejs(["config"],function(){
 						var $newTr=$('<tr data-info="" data-id="'+cartList[i]["id"]+'"><td class="good"><img src="" alt=""><div><a href="#"></a><p>颜色：'+cartList[i]["color"]+'</p><p>  套装：'+cartList[i]["suit"]+'</p></div></td><td class="price"></td><td class="num"><a href="javascript:void(0)">-</a><span>'+cartList[i]["num"]+'</span><a href="javascript:void(0)">+</a></td><td> --</td><td class="money"></td><td class="caozuo"><a href="javascript:void(0)" class="remove">删除</a></td></tr>');
 						$newTr.appendTo($("#tab"));
 						$.ajax({
-							url:"http://127.0.0.1/zol/server/php/list.php",
+							url:"../server/php/list.php",
 							type:"post",
 							dataType:"json",
 							data:{
@@ -121,7 +121,7 @@ requirejs(["config"],function(){
 					});
 					//跳转到详情页
 					$(".good").on("click",function(){
-						window.location.href="http://127.0.0.1/zol/src/info.html?id="+$(this).parents("tr").data("id");
+						window.location.href="info.html?id="+$(this).parents("tr").data("id");
 					});
 					//修改商品数量
 					$("#tab .num").find("a").eq(0).on("click",function(){

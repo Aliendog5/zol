@@ -4,7 +4,7 @@ $(function(){
     (function(){
         var id = window.location.href.split("?")[1].split("=")[1];
         $.ajax({
-            url : "http://127.0.0.1/zol/server/php/list_1.php",
+            url : "../server/php/list_1.php",
             type : "post",
             dataType : "json",
             data : {
@@ -14,6 +14,7 @@ $(function(){
             //放大镜
 
             var obj = res[0];
+            console.log(obj);
             for(var key in obj){
                 if(obj[key]!=null){
                     switch(key){
@@ -23,16 +24,16 @@ $(function(){
                             for(var i = 0; i < imgArr.length; i++){
                                 if(i == 0){
                                     $('<li class="active"><img src="images/img/' + imgArr[i] + '" alt=""></li>').appendTo($(".info .left ul"));
-                                    $(".info .left .smallImg img").attr("src", "images/img/" + imgArr[i].replace(/.jpg$/g, "x400.jpg"));
-                                    $(".info .left .bigArea .bigImg").attr("src", "images/img/" + imgArr[i].replace(/.jpg$/g, "x800.jpg"))
+                                    $(".info .left .smallImg img").attr("src", "images/img/" + imgArr[i].replace(/.jpg$/g, "x400.jpg").replace(/.png$/g,"x400.png"));
+                                    $(".info .left .bigArea .bigImg").attr("src", "images/img/" + imgArr[i].replace(/.jpg$/g, "x800.jpg").replace(/.png$/g,"x800.png"))
                                 } else {
                                     $('<li><img src="images/img/' + imgArr[i] + '" alt=""></li>').appendTo($(".info .left ul"));
                                 }
                             }
                             $(".info .left ul li").on("click", function(){
                                 $(this).addClass("active").siblings().removeClass("active");
-                                $(".info .left .smallImg img").attr("src", $(this).find("img").attr("src").replace(/.jpg$/g, "x400.jpg"));
-                                $(".info .left .bigImg").attr("src", $(this).find("img").attr("src").replace(/.jpg$/g, "x800.jpg"));
+                                $(".info .left .smallImg img").attr("src", $(this).find("img").attr("src").replace(/.jpg$/g, "x400.jpg").replace(/.png$/g,"x400.png"));
+                                $(".info .left .bigImg").attr("src", $(this).find("img").attr("src").replace(/.jpg$/g, "x800.jpg").replace(/.png$/g,"x800.png"));
                             });
                             break;
                         case "name":
@@ -73,7 +74,7 @@ $(function(){
                             }
                             break;
                         case "goodsColor":
-                            $(".info .right .goodsColor span").html("商品颜色：")
+                            $(".info .right .goodsColor span").html("商品颜色：");
                             for(var i = 0; i < JSON.parse(obj["goodsColor"]).length; i++){
                                 if(i == 0){
                                     $('<p class="active">' + JSON.parse(obj["goodsColor"])[i] + ' <i></i></p>').appendTo($(".goodsColor .content"))
@@ -160,7 +161,7 @@ $(function(){
 					console.log(res);
 					if(res=="true"){
 						$.ajax({
-							url : "http://127.0.0.1/zol/server/php/cart.php",
+							url : "../server/php/cart.php",
 							type : "post",
 							dataType : "json",
 							data : data
@@ -230,7 +231,25 @@ $(function(){
             $(".smallArea").hide();
         })
     })();
+    
+    //
+    (function(){
+        $(".delivery i").on("click",function(){
+            $(this).siblings(".menu").toggleClass("hide");
+        });
+        $(".delivery .menu ul li").on("click",function(){
+            if(!$(this).hasClass("active")){
+                $(this).addClass("active").siblings().removeClass("active");
+            }
 
+        });
+        $(".delivery .menu ol li").on("click",function(){
+            $(".delivery .menu ul li:first").text($(this).text());
+            $(".delivery i em").text($(this).text());
+            $(this).parents(".menu").toggleClass("hide");
+        })
+        
+    })();
     //details
     (function(){
         //折叠事件

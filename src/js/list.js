@@ -1,7 +1,28 @@
 require(["config"],function(){
 	require(["jquery","jquery-cookie","transform"],function($){
 		$(function(){
-			require(["header","search","nav1","footer_index","copy","aside"])
+			require(["header","search","nav1","footer_index","copy","aside"]);
+            //跳转参数
+            var arr=decodeURIComponent(window.location.search).replace("?",'').split("&");
+            for(var i=0; i<arr.length; i++){
+                switch(arr[i].split("=")[0]){
+                    case "class1":
+                        for(var j=0; j<$("select option").length; j++){
+                            if($("select option").eq(j).val()==arr[i].split("=")[1]){
+                                $("select option").eq(j).attr("selected","selected").siblings().removeAttr("selected")
+                            }
+                        };
+                        break;
+                    case "class2":
+                        for(var j=0; j<$(".all ul li input").length; j++){
+                            if($(".all ul li input").eq(j).val()==arr[i].split("=")[1]){
+                                $(".all ul li input").eq(j).attr("checked","checked")
+                            }
+                        };
+                        break;
+                }
+            }
+            //
 			$(".all ul li").eq($("select option:selected").index()).show().siblings("li").hide();
 			// class1 搜索
 			$(".all select").on("change",function(){
@@ -9,7 +30,7 @@ require(["config"],function(){
 				$(".all ol li input").attr("checked",false);
 				var str="class1='"+$(this).val()+"'";
 				$.ajax({
-					url:"http://127.0.0.1/zol/server/php/list.php",
+					url:"../server/php/list.php",
 					type:"post",
 					dataType:"json",
 					data:{
@@ -27,7 +48,7 @@ require(["config"],function(){
 							</li>*/
 					}
 					$(".list_menu ol li").on("click",function(){
-						window.location.href="http://127.0.0.1/zol/src/info.html?id="+$(this).data("info")
+						window.location.href="info.html?id="+$(this).data("info")
 					})
 				})
 			});
@@ -53,7 +74,7 @@ require(["config"],function(){
 					}
 				}
 				$.ajax({
-					url:"http://127.0.0.1/zol/server/php/list.php",
+					url:"../server/php/list.php",
 					type:"post",
 					dataType:"json",
 					data:{
@@ -71,16 +92,19 @@ require(["config"],function(){
 							</li>*/
 					}
 					$(".list_menu ol li").on("click",function(){
-						window.location.href="http://127.0.0.1/zol/src/info.html?id="+$(this).data("info")
+						window.location.href="info.html?id="+$(this).data("info")
 					})
 				})
-			})
-			$.ajax({
-				url:"http://127.0.0.1/zol/server/php/list.php",
+			});
+
+
+            var str=decodeURIComponent(window.location.search).replace("?","").replace("&","' and ").replace(/=/g,"='")+"'";
+            $.ajax({
+				url:"../server/php/list.php",
 				type:"post",
 				dataType:"json",
 				data:{
-					id:"class1='"+$(".all select").val()+"'"
+					id:str
 				}
 			}).then(function(res){
 				for(var i=0; i<res.length; i++){
@@ -93,10 +117,10 @@ require(["config"],function(){
 						</li>*/
 				}
 				$(".list_menu ol li").on("click",function(){
-					window.location.href="http://127.0.0.1/zol/src/info.html?id="+$(this).data("info")
+					window.location.href="info.html?id="+$(this).data("info")
 				})
 			});
-			
+			//价格搜索
 			$(".all ol li input").on("click",function(){
 				var arr= JSON.parse($(".all ol li input:checked").val());
 				var str="class1='"+$(".all select").val()+"' and (price>"+arr[0]+" and price<"+arr[1]+")";
@@ -111,7 +135,7 @@ require(["config"],function(){
 					
 				}
 				$.ajax({
-					url:"http://127.0.0.1/zol/server/php/list.php",
+					url:"../server/php/list.php",
 					type:"post",
 					dataType:"json",
 					data:{
@@ -129,11 +153,13 @@ require(["config"],function(){
 							</li>*/
 					}
 					$(".list_menu ol li").on("click",function(){
-						window.location.href="http://127.0.0.1/zol/src/info.html?id="+$(this).data("info")
+						window.location.href="info.html?id="+$(this).data("info")
 					})
 				})
-			})
-		});
+			});
+
+
+        });
 	})
 })
 

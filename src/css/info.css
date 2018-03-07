@@ -149,6 +149,7 @@
   line-height: 20px;
   padding: 0 10px;
   margin-right: 20px;
+  cursor: pointer;
 }
 .info .right ul .delivery i strong {
   display: inline-block;
@@ -158,15 +159,19 @@
   background: url("../images/img/topbar_ico.png") 0 0 no-repeat;
   background-position: 0 -45px;
 }
-.info .right ul .delivery .menu {
+.info .right ul .delivery .hide {
   display: none;
+}
+.info .right ul .delivery .menu {
+  background-color: #fff;
   border: 1px solid #ccc;
+  z-index: 10;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 10px;
   position: absolute;
-  top: 23px;
-  left: 63px;
+  top: 24px;
+  left: 65px;
   width: 400px;
 }
 .info .right ul .delivery .menu ul {
@@ -182,13 +187,12 @@
   line-height: 20px;
   background-color: #fff;
   position: relative;
-  top: 2px;
-  z-index: -1;
+  z-index: 1;
 }
 .info .right ul .delivery .menu ul .active {
   border: 2px solid #c00;
   border-bottom: 0;
-  z-index: 1;
+  top: 2px;
 }
 .info .right ul .delivery .menu ol li {
   cursor: pointer;
@@ -250,6 +254,7 @@
   padding: 0 10px;
   border: 2px solid #ccc;
   margin-right: 20px;
+  margin-bottom: 10px;
   line-height: 20px;
 }
 .info .right ul .edition p i,
@@ -297,6 +302,7 @@
   height: 88px;
 }
 .info .right ul .suit h3 {
+  width: 100%;
   position: absolute;
   top: 30px;
   font-size: 12px;

@@ -16,16 +16,18 @@ if ($_SERVER["REQUEST_METHOD"]=="POST") {
         $userSex = $_POST["userSex"];
         $userAddress = $_POST["userAddress"];
 
-//创建spl对象
+        //创建spl对象
         $conn = new mysqli("127.0.0.1", "root", "", "zol_shopping");
         // 设置参数
         mysqli_query($conn, "set names utf8");
 
         // 准备spl语句
-        $str = "INSERT INTO userinfo(user_name,user_pwd,user_tel,user_sex,user_address) VALUES('" . $userName . "','" . $userPwd . "','" . $userTel . "','" . $userSex . "','" . $userAddress . "')";
+        $str = "INSERT INTO userinfo(user_name,user_pwd,user_tel,user_sex,user_address) VALUES(?,?,?,?,?)";
+        $stm=$conn->prepare($str);
+        $stm->bind_param("sssss",$userName,$userPwd,$userTel,$userSex,$userAddress);
+        $stm->execute();
         //执行spl语句
-        $res = $conn->query($str);
-        $conn->close();
+        $res = $stm->store_result();
         $resArr = array();
         if ($res) {
             $resArr["status"] = 1;
@@ -46,5 +48,6 @@ if ($_SERVER["REQUEST_METHOD"]=="POST") {
             $resArr["msg"] = "注册失败";
             print_r(json_encode($resArr));
         }
+        $conn->close();
     }
 }

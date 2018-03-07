@@ -66,7 +66,7 @@ require(["config"], function(){
 			(function(){
 				//动态生成li
 				$.ajax({
-					url : "http://127.0.0.1/zol/server/php/group.php",
+					url : "../server/php/group.php",
 					dataType : "json"
 				}).then(function(res){
 					var arr = res;
@@ -168,7 +168,7 @@ require(["config"], function(){
 			(function(){
 				//动态生成 choice-top-left-top
 				$.ajax({
-					url : "http://127.0.0.1/zol/server/php/choice.php",
+					url : "../server/php/choice.php",
 					type : "post",
 					dataType : "json",
 					data : {
@@ -188,7 +188,7 @@ require(["config"], function(){
 				});
 				//动态生成 choice-top-left-bot
 				$.ajax({
-					url : "http://127.0.0.1/zol/server/php/choice.php",
+					url : "../server/php/choice.php",
 					type : "post",
 					dataType : "json",
 					data : {
@@ -217,7 +217,7 @@ require(["config"], function(){
 				})
 				//动态生成 choice-top-right
 				$.ajax({
-					url : "http://127.0.0.1/zol/server/php/choice.php",
+					url : "../server/php/choice.php",
 					type : "post",
 					dataType : "json",
 					data : {
@@ -258,7 +258,7 @@ require(["config"], function(){
 			//brand
 			(function(){
 				$.ajax({
-					url : "http://127.0.0.1/zol/server/php/brand.php",
+					url : "../server/php/brand.php",
 					dataType : "json"
 				}).then(function(res){
 					for(var i = 0; i < res.length; i++){
@@ -297,7 +297,7 @@ require(["config"], function(){
 				//轮播
 				//动态获取数据
 				$.ajax({
-					url : "http://127.0.0.1/zol/server/php/e_Sports.php",
+					url : "../server/php/e_Sports.php",
 					type : "post",
 					dataType : "json",
 					data : {
@@ -368,7 +368,7 @@ require(["config"], function(){
 			//e_Sports_right
 			(function(){
 				$.ajax({
-					url : "http://127.0.0.1/zol/server/php/e_Sports.php",
+					url : "../server/php/e_Sports.php",
 					type : "post",
 					dataType : "json",
 					data : {
@@ -397,7 +397,7 @@ require(["config"], function(){
 						paddingTop : "90px"
 					})
 				} else {
-					$(".search1 .logo img").attr("src", "http://127.0.0.1/zol/src/images/img/2018logo_130x60.gif");
+					$(".search1 .logo img").attr("src", "images/img/2018logo_130x60.gif");
 					$(".search1").css({
 						position : "static",
 						marginLeft : 0
