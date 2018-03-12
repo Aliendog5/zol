@@ -2,16 +2,19 @@
 define("config",[],function(){
     require.config({
         paths:{
-            "html5":["http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min","lib/html5shiv/html5shiv"],
-            "jquery":["lib/jquery/jquery-1.11.1.min"],
+            "html5":["http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min","lib/html5shiv/html5shiv.min"],
+            "jquery":["http://libs.baidu.com/jquery/1.11.1/jquery.min","lib/jquery/jquery-1.11.1.min"],
             "jquery-cookie":["lib/jquery.cookie/jquery.cookie"],
-            "validate":"lib/jquery-validation-1.14.0/jquery.validate.min",
-            "lazyload":"lib/tuupola-jquery_lazyload/jquery.lazyload",
+            "validate":["lib/jquery-validation-1.14.0/jquery.validate.min"],
+            "lazyload":["http://apps.bdimg.com/libs/jquery-lazyload/1.9.5/jquery.lazyload","lib/tuupola-jquery_lazyload/jquery.lazyload.min"],
             "md5":"lib/md5/jquery.md5",
             "transform":"lib/jquery-transform",
             "scroll":"lib/jquery-scroll",
             "tools":"lib/jquery-tools",
-			"idcode":"lib/idcode/jquery.idcode"
+			"idcode":"lib/idcode/jquery.idcode",
+            "dragBox":"lib/jquery-dragBox.1.0.0",
+            "header":"header",
+            "aside":"aside"
         },
         shim:{
 			"transform":["jquery"],
@@ -19,7 +22,10 @@ define("config",[],function(){
 			"tools":["jquery"],
 			"lazyload":["jquery"],
 			"idcode":["jquery"],
-			"md5":["jquery"]
+			"md5":["jquery"],
+            "dragBox":["jquery"],
+            "header":["jquery","dragBox"],
+            "aside":["jquery","scroll"]
         }
     })
 });

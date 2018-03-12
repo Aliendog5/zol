@@ -67,6 +67,9 @@
   border-radius: 50%;
   border: 1px solid #999;
 }
+.all .group {
+  height: 260px;
+}
 .all .group .title h2 {
   background-position: -137px 3px;
 }

@@ -2,7 +2,7 @@ nav {
   padding-top: 30px;
   font-size: 18px;
 }
-nav .main .list {
+nav .main .list1 {
   float: left;
   width: 160px;
   height: 40px;
@@ -11,22 +11,22 @@ nav .main .list {
   position: relative;
   text-align: center;
 }
-nav .main .list .iconfont1 {
+nav .main .list1 .iconfont1 {
   display: inline-block;
   height: 18px;
   vertical-align: middle;
   margin-right: 10px;
   background-image: url(../images/img/head.png);
 }
-nav .main .list p {
+nav .main .list1 p {
   color: #fff;
 }
-nav .main .list p .iconfont1 {
+nav .main .list1 p .iconfont1 {
   width: 12px;
   height: 12px;
   background-position: 0 -154px;
 }
-nav .main .list ol {
+nav .main .list1 ol {
   position: absolute;
   background: #454545;
   top: 40px;
@@ -34,7 +34,7 @@ nav .main .list ol {
   height: 400px;
   z-index: 9;
 }
-nav .main .list ol li {
+nav .main .list1 ol li {
   position: relative;
   padding: 0 10px;
   color: #fff;
@@ -45,54 +45,54 @@ nav .main .list ol li {
   border-bottom: 1px solid #4d4d4d;
   z-index: 999;
 }
-nav .main .list ol li:hover {
+nav .main .list1 ol li:hover {
   background-color: #fff;
   color: #333;
 }
-nav .main .list ol li:nth-child(1) .iconfont1 {
+nav .main .list1 ol li:nth-child(1) .iconfont1 {
   width: 13px;
   background-position: 0 0;
 }
-nav .main .list ol li:nth-child(1):hover .iconfont1 {
+nav .main .list1 ol li:nth-child(1):hover .iconfont1 {
   background-position: -37px 0;
 }
-nav .main .list ol li:nth-child(2) .iconfont1 {
+nav .main .list1 ol li:nth-child(2) .iconfont1 {
   width: 20px;
   background-position: 0 -21px;
 }
-nav .main .list ol li:nth-child(2):hover .iconfont1 {
+nav .main .list1 ol li:nth-child(2):hover .iconfont1 {
   background-position: -30px -21px;
 }
-nav .main .list ol li:nth-child(3) .iconfont1 {
+nav .main .list1 ol li:nth-child(3) .iconfont1 {
   width: 18px;
   background-position: 0 -133px;
 }
-nav .main .list ol li:nth-child(3):hover .iconfont1 {
+nav .main .list1 ol li:nth-child(3):hover .iconfont1 {
   background-position: -31px -133px;
 }
-nav .main .list ol li:nth-child(4) .iconfont1 {
+nav .main .list1 ol li:nth-child(4) .iconfont1 {
   width: 20px;
   background-position: 0 -40px;
 }
-nav .main .list ol li:nth-child(4):hover .iconfont1 {
+nav .main .list1 ol li:nth-child(4):hover .iconfont1 {
   background-position: -30px -40px;
 }
-nav .main .list ol li:nth-child(5) .iconfont1 {
+nav .main .list1 ol li:nth-child(5) .iconfont1 {
   width: 15px;
   height: 27px;
   background-position: 0 -61px;
 }
-nav .main .list ol li:nth-child(5):hover .iconfont1 {
+nav .main .list1 ol li:nth-child(5):hover .iconfont1 {
   background-position: -35px -61px;
 }
-nav .main .list ol li:nth-child(6) .iconfont1 {
+nav .main .list1 ol li:nth-child(6) .iconfont1 {
   width: 19px;
   background-position: 0 -91px;
 }
-nav .main .list ol li:nth-child(6):hover .iconfont1 {
+nav .main .list1 ol li:nth-child(6):hover .iconfont1 {
   background-position: -30px -91px;
 }
-nav .main .list ol div {
+nav .main .list1 ol div {
   display: none;
   position: absolute;
   left: 160px;
@@ -101,7 +101,7 @@ nav .main .list ol div {
   width: 680px;
   background-color: #fff;
 }
-nav .main .list ol div p {
+nav .main .list1 ol div p {
   width: 500px;
   height: 110px;
   -webkit-box-sizing: border-box;
@@ -109,20 +109,20 @@ nav .main .list ol div p {
   padding: 20px;
   text-align: left;
 }
-nav .main .list ol div p a {
+nav .main .list1 ol div p a {
   display: inline;
   margin-right: 20px;
   color: #333;
   font-size: 12px;
 }
-nav .main .list ol div p a:hover {
+nav .main .list1 ol div p a:hover {
   color: #ec3639;
   text-decoration: underline;
 }
-nav .main .list ol div a {
+nav .main .list1 ol div a {
   display: block;
 }
-nav .main .list ol div a img {
+nav .main .list1 ol div a img {
   display: block;
 }
 nav .main ul {

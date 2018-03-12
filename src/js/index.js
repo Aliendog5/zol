@@ -1,5 +1,5 @@
 require(["config"], function(){
-	require(["jquery","jquery-cookie","html5","transform","lazyload","scroll"], function($){
+	require(["jquery","jquery-cookie","html5","transform","lazyload","scroll","dragBox"], function($){
 		$(function(){
 			require(["header","search","nav","footer_index","copy","aside"])
 			
@@ -68,17 +68,49 @@ require(["config"], function(){
 				$.ajax({
 					url : "../server/php/group.php",
 					dataType : "json"
-				}).then(function(res){
-					var arr = res;
+				}).then(function(res,status,xhr){
+                    var arr = res;
+                    var timeNew=new Date(xhr.getResponseHeader("date"));
 					for(var i = 0; i < arr.length; i++){
-						//动态生成li
-						$('<li class="clearfix goods"><div class="left"><p class="goodsName">' + arr[i]["name"] + '</p><p class="goodsDetails">' + arr[i]["msg"] + '</p><p class="goodsPrice"><i>￥</i><span>' + arr[i]["price"] + '</span></p><p class="goodsTime"> <span>剩余: </span><i>0</i>天<i>0</i>小时<i>0</i>分<i>0</i>秒</p></div><div class="right"><img src="' + arr[i]["img"] + '" alt=""></div><div class="slide"><div class="slide_left"><img src="' + arr[i]["img"] + '" alt=""><ol><li><a href="#">评测</a>|</li><li><a href="#">视频</a>|</li><li><a href="#">点评</a></li></ol></div><div class="slide_right"><p class="slide_name" >' + arr[i]["name"] + '</p><p class="slide_price" >团购价：<span>¥' + arr[i]["price"] + '</span></p><p class="slide_reference_price" >电商参考价：<span>¥' + arr[i]["price2"] + '</span></p><a href="#" class="slide_toPay">去团购</a></div></div></li>').appendTo($(".group_lunbo ul"))
-						
-					}
+
+                        var time=new Date(arr[i]["time"]);
+
+					    var timeNum=time.getTime()-timeNew.getTime();
+                        var flag=timeNum<0?0:1;
+					    var ss=timeNum<0?"--":parseInt(timeNum/1000)%60;
+					    var mm=timeNum<0?"--":parseInt(timeNum/1000/60)%60;
+					    var hh=timeNum<0?"--":parseInt(timeNum/1000/60/60)%24;
+                        var day=timeNum<0?"--":parseInt(timeNum/1000/60/60/24);
+                        //动态生成li
+						$('<li class="clearfix goods"><div class="left"><p class="goodsName">' + arr[i]["name"] + '</p><p class="goodsDetails">' + arr[i]["msg"] + '</p><p class="goodsPrice"><i>￥</i><span>' + arr[i]["price"] + '</span></p><p class="goodsTime" data-time="'+timeNum+'" data-flag="'+flag+'"> <span>剩余: </span><i>'+day+'</i>天<i>'+hh+'</i>小时<i>'+mm+'</i>分<i>'+ss+'</i>秒</p></div><div class="right"><img src="' + arr[i]["img"] + '" alt=""></div><div class="slide"><div class="slide_left"><img src="' + arr[i]["img"] + '" alt=""><ol><li><a href="#">评测</a>|</li><li><a href="#">视频</a>|</li><li><a href="#">点评</a></li></ol></div><div class="slide_right"><p class="slide_name" >' + arr[i]["name"] + '</p><p class="slide_price" >团购价：<span>¥' + arr[i]["price"] + '</span></p><p class="slide_reference_price" >电商参考价：<span>¥' + arr[i]["price2"] + '</span></p><a href="#" class="slide_toPay">去团购</a></div></div></li>').appendTo($(".group_lunbo ul"));
+					};
+
 					for(var i = 0; i < 3; i++){
-						$('<li class="clearfix goods"><div class="left"><p class="goodsName">' + arr[i]["name"] + '</p><p class="goodsDetails">' + arr[i]["msg"] + '</p><p class="goodsPrice"><i>￥</i><span>' + arr[i]["price"] + '</span></p><p class="goodsTime"> <span>剩余: </span><i>0</i>天<i>0</i>小时<i>0</i>分<i>0</i>秒</p></div><div class="right"><img src="' + arr[i]["img"] + '" alt=""></div><div class="slide"><div class="slide_left"><img src="' + arr[i]["img"] + '" alt=""><ol><li><a href="#">评测</a>|</li><li><a href="#">视频</a>|</li><li><a href="#">点评</a></li></ol></div><div class="slide_right"><p class="slide_name" >' + arr[i]["name"] + '</p><p class="slide_price" >团购价：<span>¥' + arr[i]["price"] + '</span></p><p class="slide_ reference_price" >电商参考价：<span>¥' + arr[i]["price2"] + '</span></p><a href="#" class="slide_toPay">去团购</a></div></div></li>').appendTo($(".group_lunbo ul"))
+                        var time=new Date(arr[i]["time"]);
+                        var timeNum=time.getTime()-timeNew.getTime();
+                        var flag=timeNum<0?0:1;
+						$('<li class="clearfix goods"><div class="left"><p class="goodsName">' + arr[i]["name"] + '</p><p class="goodsDetails">' + arr[i]["msg"] + '</p><p class="goodsPrice"><i>￥</i><span>' + arr[i]["price"] + '</span></p><p class="goodsTime" data-time="'+timeNum+'" data-flag="'+flag+'"><span>剩余: </span><i>'+day+'</i>天<i>'+hh+'</i>小时<i>'+mm+'</i>分<i>'+ss+'</i>秒</p></div><div class="right"><img src="' + arr[i]["img"] + '" alt=""></div><div class="slide"><div class="slide_left"><img src="' + arr[i]["img"] + '" alt=""><ol><li><a href="#">评测</a>|</li><li><a href="#">视频</a>|</li><li><a href="#">点评</a></li></ol></div><div class="slide_right"><p class="slide_name" >' + arr[i]["name"] + '</p><p class="slide_price" >团购价：<span>¥' + arr[i]["price"] + '</span></p><p class="slide_ reference_price" >电商参考价：<span>¥' + arr[i]["price2"] + '</span></p><a href="#" class="slide_toPay">去团购</a></div></div></li>').appendTo($(".group_lunbo ul"));
 					}
-					//动态设置ul宽度
+
+                    setInterval(function(){
+                        for(var i=0; i<$("[data-flag='1']").length; i++){
+                           var timeNum = $("[data-flag='1']").eq(i).data("time");
+                            timeNum=timeNum-1000;
+                            $("[data-flag='1']").eq(i).data("time",timeNum);
+                            if(timeNum<0){
+                                $("[data-flag='1']").eq(i).data("flag",0)
+                            }
+                            var ss=timeNum<0?"--":parseInt(timeNum/1000)%60;
+                            var mm=timeNum<0?"--":parseInt(timeNum/1000/60)%60;
+                            var hh=timeNum<0?"--":parseInt(timeNum/1000/60/60)%24;
+                            var day=timeNum<0?"--":parseInt(timeNum/1000/60/60/24);
+                            $("[data-flag='1']").eq(i).find("i").eq(0).text(day);
+                            $("[data-flag='1']").eq(i).find("i").eq(1).text(hh);
+                            $("[data-flag='1']").eq(i).find("i").eq(2).text(mm);
+                            $("[data-flag='1']").eq(i).find("i").eq(3).text(ss);
+                        }
+                    },1000);
+                    //动态设置ul宽度
 					$(".group_lunbo ul").css("width", 1200 * Math.ceil($(".group_lunbo ul .goods").length / 3) + "px");
 					//动态设置每个li的背景颜色
 					for(var i = 0; i < $(".group_lunbo ul .goods").length; i++){
@@ -112,19 +144,29 @@ require(["config"], function(){
 					////动态生成轮播小图标个数
 					for(var i = 0; i < Math.ceil($(".group_lunbo ul .goods").length / 3) - 1; i++){
 						var $newLi2 = $("<li></li>");
-						$newLi2.css({
-							width : "30px",
-							height : "10px",
-							float : "left",
-							marginLeft : "10px",
-							backgroundColor : "#ccc"
-						});
+						if(i==0){
+                            $newLi2.css({
+                                width : "30px",
+                                height : "10px",
+                                float : "left",
+                                marginLeft : "10px",
+                                backgroundColor : "#c00"
+                            });
+						}else {
+                            $newLi2.css({
+                                width : "30px",
+                                height : "10px",
+                                float : "left",
+                                marginLeft : "10px",
+                                backgroundColor : "#ccc"
+                            });
+                        }
 						//给动态生成的小图标绑定点击事件
 						$newLi2.on("click", function(){
+                            $(".group_lunbo ul").stop();
 							index = $(this).index() - 1;
-							console.log(index);
 							autoPlay1()
-						})
+						});
 						$newOl.append($newLi2)
 					}
 					// 自动轮播函数
@@ -183,7 +225,7 @@ require(["config"], function(){
 					}
 					lazy();
 					$(".choice .top .left .left_top ul li").on("mouseenter", function(){
-						$(".choice .top .left .left_top ol li").eq($(this).index()).css("zIndex", 999).siblings().css("zIndex", 0);
+						$(".choice .top .left .left_top ol li").eq($(this).index()).css("zIndex", 9).siblings().css("zIndex", 0);
 					})
 				});
 				//动态生成 choice-top-left-bot

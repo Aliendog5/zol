@@ -55,10 +55,10 @@ require(["config"],function(){
 			// class2 搜索
 			$(".all ul li input").on("click",function(){
 				// 判断二级搜索是否有条件
-				if($(this).parent().find("input:checked").length!=0){
+                if($(this).parents("li").find("input:checked").length!=0){
 					var str="class1='"+$(".all select").val()+"' and (";
-					for(var i=0; i<$(this).parent().find("input:checked").length; i++){
-						str+="class2='"+$(this).parent().find("input:checked")[i].value+"' or "
+					for(var i=0; i<$(this).parents("li").find("input:checked").length; i++){
+						str+="class2='"+$(this).parents("li").find("input:checked")[i].value+"' or "
 					}
 					str=str.replace(/or\s$/,')');
 					// 判断价格选项是否选中
@@ -67,13 +67,13 @@ require(["config"],function(){
 						str+=" and (price>"+arr[0]+" and price<"+arr[1]+")"
 					}
 				}else {
-					var str="class1='"+$(".all select option").eq($(this).parent().index()).val()+"'";
+					var str="class1='"+$(".all select option").eq($(this).parents("li").index()).val()+"'";
 					if($(".all ol li input:checked").length!=0){
 						var arr = JSON.parse($(".all ol li input:checked").val());
 						str+=" and (price>"+arr[0]+" and price<"+arr[1]+")"
 					}
 				}
-				$.ajax({
+                $.ajax({
 					url:"../server/php/list.php",
 					type:"post",
 					dataType:"json",
@@ -123,8 +123,9 @@ require(["config"],function(){
 			//价格搜索
 			$(".all ol li input").on("click",function(){
 				var arr= JSON.parse($(".all ol li input:checked").val());
-				var str="class1='"+$(".all select").val()+"' and (price>"+arr[0]+" and price<"+arr[1]+")";
-				
+				var str="class1='"+$(".all select").val()+"' and price>"+arr[0];
+				var str2=arr[1]=="max"?"":" and price<"+arr[1];
+                str+=str2;
 				if($(".all ul li").eq($(".all select option:checked").index()).find("input:checked").length!=0){
 					str+=" and (";
 					for(var i=0; i<$(".all ul li").eq($(".all select option:checked").index()).find("input:checked").length; i++){

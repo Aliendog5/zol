@@ -3,15 +3,26 @@ require(["config"],function(){
     require(["jquery","validate","tools","md5"],function($){
 		$(function(){
 		    require(["footer"]);
+            jQuery.validator.addMethod("isZipCode", function(value, element) {
+                var tel = /^[a-zA-Z]/;
+                return this.optional(element) || (tel.test(value));
+            }, "用户名必须是字母开头");
+            jQuery.validator.addMethod("isPwd", function(value, element) {
+                var tel = /[a-zA-Z]/;
+                var tel1=/\d/;
+                return this.optional(element) || (tel.test(value)&&tel1.test(value));
+            }, "密必须包含数字、字母、下划线中的两种");
 			$("#myform").validate({
 				rules:{
 					userName:{
+                        isZipCode:true,
 						required : true,
 						rangelength:[6,16],
 						remote:"../server/php/userNameTest.php"
 					},
 					userPwd:{
-						rangelength:[8,18]
+						rangelength:[8,18],
+                        isPwd:true
 					},
 					userPwd2:{
 						equalTo:"#field"

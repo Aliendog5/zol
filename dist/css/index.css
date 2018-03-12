@@ -13,6 +13,7 @@
 .all .title h2 a:hover i{border:1px solid #c00}
 .all .title h2 a{line-height:16px;font-size:14px;color:#999;float:right}
 .all .title h2 a i{text-align:center;display:inline-block;width:16px;height:16px;border-radius:50%;border:1px solid #999}
+.all .group{height:260px}
 .all .group .title h2{background-position:-137px 3px}
 .all .group .group_lunbo{height:150px;width:100%;overflow:hidden}
 .all .group .group_lunbo ul{position:relative;height:100%}

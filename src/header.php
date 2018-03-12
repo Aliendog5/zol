@@ -60,6 +60,10 @@
             </li>
         </ol>
     </div>
-    <div class="main">
-
+    <div class="confirm">
+        <div class="center">
+            <p>您确定要退出登录吗？</p>
+            <button class="yes">YES</button>
+            <button class="no">NO</button>
+        </div>
     </div>

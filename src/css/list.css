@@ -10,6 +10,12 @@
 .all ul {
   padding-top: 30px;
 }
+.all ul li {
+  display: none;
+}
+.all ul li:nth-child(1) {
+  display: block;
+}
 .all ul li input {
   margin-left: 20px;
 }

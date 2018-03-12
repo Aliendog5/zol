@@ -10,13 +10,12 @@ $(function(){
 		}).then(function(res){
 			if(res=="true"){
 				$(".user .loginOut").on("click", function(){
-					if(confirm("确定要退出登录码")){
-						$.ajax({
-							url : "../server/php/out.php"
-						});
-						window.location.reload();
-					}
-				});
+				    $(".confirm").show();
+                    $('body').css({
+                        "overflow-x":"hidden",
+                        "overflow-y":"hidden"
+                    });
+                });
 				$.ajax({
 					url : "../server/php/cart.php",
 					type : "post",
@@ -33,6 +32,24 @@ $(function(){
 				$(".slide_aside ul li").eq(2).find("a span").text(JSON.parse($.cookie("list")||"[]").length);
 			}
 		})
+        $(".confirm .yes").on("click",function(){
+            $.ajax({
+                url : "../server/php/out.php"
+            });
+            window.location.reload();
+            $('body').css({
+                "overflow-x":"auto",
+                "overflow-y":"auto"
+            });
+        });
+        $(".confirm .no").on("click",function(){
+            $(".confirm").hide();
+            $('body').css({
+                "overflow-x":"auto",
+                "overflow-y":"auto"
+            });
+        })
+        $(".confirm .center").dragbox();
     
     })
 });

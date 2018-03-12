@@ -36,18 +36,35 @@ requirejs(["config"],function(){
 								data:{
 									id:data
 								}
-							})
+							});
 							alert("操作成功");
 							$(".price p em").text(Number($(".cart span").text())-1);
 							$(".cart span").text(Number($(".cart span").text())-1);
+							var money=0;
+							for(var i=0; i<$(".money").length; i++){
+                                money+=parseInt($(".money").eq(i).text())
+							}
+							$(".price p em").text(money);
+                            $(".total span em").text(money);
 						});
 						//跳转到详情页
 						$(".good").on("click",function(){
 							window.location.href="info.html?id="+$(this).parents("tr").data("id");
 						});
 						//修改商品数量
-						$("#tab .num").find("a:first").on("click",function(){
-							$(this).siblings("span").text($(this).siblings("span").text()<=1?1:$(this).siblings("span").text()-1);
+                        //减
+						$("#tab .num").find("a:even").on("click",function(){
+
+							if($(this).siblings("span").text()>1){
+                                //修改单列商品总价
+                                $(this).parents("td").siblings(".money").text($(this).parents("td").siblings(".money").text()-$(this).parents("td").siblings(".price").text());
+                                //修改购物车商品总价
+                                var all=parseInt($(".price p span i").text())-parseInt($(this).parents("td").siblings(".price").text());
+                                //修改购物车商品总价
+                                $(".price p span i").text(all);
+                                $(".list .total span em").text(all);
+							}
+                            $(this).siblings("span").text($(this).siblings("span").text()<=1?1:$(this).siblings("span").text()-1);
 							var data=$(this).parents("tr").data("info");
 							$.ajax({
 								url:"../server/php/remove.php",
@@ -59,8 +76,16 @@ requirejs(["config"],function(){
 								}
 							})
 						});
-						$("#tab .num").find("a:last").on("click",function(){
+						//加
+						$("#tab .num").find("a:odd").on("click",function(){
 							$(this).siblings("span").text(Number($(this).siblings("span").text())+1);
+							//修改单列商品总价
+                            $(this).parents("td").siblings(".money").text($(this).parents("td").siblings(".price").text()*$(this).siblings("span").text());
+                            //修改购物车商品总价
+                            var all=parseInt($(".price p span i").text())+parseInt($(this).parents("td").siblings(".price").text());
+                            //修改购物车商品总价
+                            $(".price p span i").text(all);
+                            $(".list .total span em").text(all);
 							var data=$(this).parents("tr").data("info");
 							$.ajax({
 								url:"../server/php/remove.php",
@@ -73,7 +98,7 @@ requirejs(["config"],function(){
 							})
 						});
 						$(".price p span i").text(num);
-						$(".list .total span").text("￥"+num);
+						$(".list .total span em").text(num);
 					})
 				}else {
 				    //没有登录的状态
@@ -99,7 +124,7 @@ requirejs(["config"],function(){
 							
 							$("#tab tr[data-id="+res[0]["id"]+"] .money").text(Number(res[0]["price"])*Number($("#tab tr[data-id="+res[0]["id"]+"] .num span").text()));
 							$(".price p span i").text(num);
-							$(".list .total span").text("￥"+num);
+							$(".list .total span em").text(num);
 						})
 					};
 					// 绑定删除点击事件
@@ -118,6 +143,12 @@ requirejs(["config"],function(){
 						$(".cart span").text(arr.length);
 						$(".price p em").text(arr.length);
 						$.cookie("list",JSON.stringify(arr))
+                        var money=0;
+                        for(var i=0; i<$(".money").length; i++){
+                            money+=parseInt($(".money").eq(i).text())
+                        }
+                        $(".price p em").text(money);
+                        $(".total span em").text(money);
 						
 					});
 					//跳转到详情页
@@ -125,8 +156,17 @@ requirejs(["config"],function(){
 						window.location.href="info.html?id="+$(this).parents("tr").data("id");
 					});
 					//修改商品数量
-					$("#tab .num").find("a").eq(0).on("click",function(){
-						$(this).siblings("span").text($(this).siblings("span").text()<=1?1:$(this).siblings("span").text()-1);
+					$("#tab .num").find("a:even").on("click",function(){
+
+                        if($(this).siblings("span").text()>1){
+                            //修改单列商品总价
+                            $(this).parents("td").siblings(".money").text($(this).parents("td").siblings(".money").text()-$(this).parents("td").siblings(".price").text());
+                            var all=parseInt($(".price p span i").text())-parseInt($(this).parents("td").siblings(".price").text());
+                            //修改购物车商品总价
+                            $(".price p span i").text(all);
+                            $(".list .total span em").text(all);
+                        }
+                        $(this).siblings("span").text($(this).siblings("span").text()<=1?1:$(this).siblings("span").text()-1);
 						var arr=JSON.parse($.cookie("list"));
 						for(var i=0; i<arr.length; i++){
 							if(arr[i]["id"]==$(this).parents("tr").data("id")){
@@ -135,8 +175,14 @@ requirejs(["config"],function(){
 						}
 						$.cookie("list",JSON.stringify(arr))
 					});
-					$("#tab .num").find("a").eq(1).on("click",function(){
+					$("#tab .num").find("a:odd").on("click",function(){
 						$(this).siblings("span").text(Number($(this).siblings("span").text())+1);
+                        $(this).parents("td").siblings(".money").text($(this).parents("td").siblings(".price").text()*$(this).siblings("span").text());
+                        //修改购物车商品总价
+                        var all=parseInt($(".price p span i").text())+parseInt($(this).parents("td").siblings(".price").text());
+                        //修改购物车商品总价
+                        $(".price p span i").text(all);
+                        $(".list .total span em").text(all);
 						var arr=JSON.parse($.cookie("list"));
 						for(var i=0; i<arr.length; i++){
 							if(arr[i]["id"]==$(this).parents("tr").data("id")){
